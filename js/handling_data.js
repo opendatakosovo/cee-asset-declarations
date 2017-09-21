@@ -1151,13 +1151,20 @@ var jsonData = [{
       }
    }];
 
-$('g').on('click', function(e){
+var countries = ["Albania", "Azerbaijan", "Bosnia and Herzegovina", "Croatia", "Czech Republic", "Georgia", "Hungary", "Kosovo", "Latvia", "Moldova", "Poland", "Romania", "Russia", "Serbia", "Slovakia", "Slovenia", "Turkey", "Ukraine"];
+
+$('g, .next, .previous').on('click', function(e){
+  var selectedCountryName = $(this).data('country');
    $('html, body').animate({
         scrollTop: $("#res-sect").offset().top
     }, 'slow');
    $('.results-section').fadeIn();
    handleData($(this).data('country'));
-   $('.country-name').text($(this).data('country'));
+   $('.country-name').text(selectedCountryName);
+   $('.country-name').attr('data-country', selectedCountryName);
+   var nextAndPreviousCountries = inArray(selectedCountryName, countries);
+   $('.next').html(nextAndPreviousCountries.nextCountry+'<i class="fa fa-arrow-right" aria-hidden="true"></i>').data('country', nextAndPreviousCountries.nextCountry);
+   $('.previous').html('<i class="fa fa-arrow-left" aria-hidden="true"></i>'+nextAndPreviousCountries.previousCountry).data('country', nextAndPreviousCountries.previousCountry);
    e.preventDefault();
 });
 
@@ -1178,6 +1185,7 @@ function handleData(countryName) {
       }
    });
 }
+
 function renderData(sectionJSONName) {
    $.each(sectionJSONName, function(key, value) {
       var finalValue = "";
@@ -1193,4 +1201,22 @@ function renderData(sectionJSONName) {
 
       $('#'+key).html(finalValue);
    });
+}
+
+function inArray(country, array){
+  var arrayLength = array.length;
+  for(var i = 0; i < arrayLength; i++) {
+    if(country == array[i]) {
+      var nextCountry = array[i+1];
+      var previousCountry = array[i-1];
+      if(array[i] == "Albania"){
+        previousCountry = array[arrayLength-1]
+      }
+      if(array[i] == "Ukraine"){
+        nextCountry = array[0]
+      }
+
+      return {'nextCountry': nextCountry, 'previousCountry': previousCountry};
+    }
+  }
 }

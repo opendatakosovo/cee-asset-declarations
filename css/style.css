@@ -1,5 +1,5 @@
 html, body {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif!important;
   width: 100%;
   min-height: 100%!important;
   height: 100%;
@@ -129,9 +129,26 @@ td {
   text-transform: capitalize;
 }
 
-.responses {
-   /*font-size: 24px;*/
+.fa-arrow-left {
+  padding-right: 12px;
 }
+.fa-arrow-right {
+  padding-left: 12px;
+}
+
+.arrows-sect {
+  margin-bottom: 25px;
+}
+
+.next, .previous {
+  color: #625fd5;
+  cursor: pointer;
+}
+
+.next:hover, .previous:hover {
+  color: #4fb0c6;
+}
+
 .fa-remove:before, .fa-close:before, .fa-times:before, .fa-check:before {
    font-size: 25px;
 }

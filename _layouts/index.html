@@ -899,7 +899,7 @@
 <div class="container-fluid">
    <div id="res-sect" class="row country-name-sect">
       <div class="container">
-         <h2 class="country-name">Select a country above to get started</h2>
+         <h2 class="country-name" data-country="">Select a country above to get started</h2>
       </div>
    </div>
    <div style="display: none;" class="row results-section">
@@ -1199,6 +1199,13 @@
            </div>
         </div>
     </div>
-
+    <div class="container arrows-sect">
+      <div class="col-md-4">
+        <h3 data-country class="previous"></h3>
+      </div>
+      <div class="col-md-offset-4 col-md-4">
+        <h3 data-country class="next pull-right"></h3>
+      </div>
+    </div>
 </div>
 {% include footer.html %}
