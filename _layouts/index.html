@@ -895,13 +895,14 @@
       </svg>
    </div>
 </div>
+<img src="assets/up_map.png" class="scrollup" />
 <div class="container-fluid">
    <div id="res-sect" class="row country-name-sect">
       <div class="container">
          <h2 class="country-name">Select a country above to get started</h2>
       </div>
    </div>
-   <div class="row">
+   <div style="display: none;" class="row results-section">
       <div class="panel-group" id="accordion">
            <div class="panel panel-default container-fluid">
              <div class="panel-heading container">
@@ -927,14 +928,13 @@
                       </thead>
                       <tbody>
                         <tr class="responses">
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td>asdas asdasd asdasdasd</td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <!-- <td><i class="fa fa-times" aria-hidden="true"></i></td> -->
+                          <td id="ministers_members_parliament"></td>
+                          <td id="state_municipal_higher_menagement"></td>
+                          <td id="public_service_employees"></td>
+                          <td id="judges_prosecutors_court_directors"></td>
+                          <td id="managers_of_state_owned_enterprises"></td>
+                          <td id="grant_receivers"></td>
+                          <td id="relatives_of_public_officials"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -967,16 +967,16 @@
                       </thead>
                       <tbody>
                         <tr class="responses">
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td>asdas asdasd asdasdasd</td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                          <td id="income_private_public_sources"></td>
+                          <td id="real_estate"></td>
+                          <td id="movable_property"></td>
+                          <td id="money"></td>
+                          <td id="beneficial_ownership"></td>
+                          <td id="management_of_NGOs"></td>
+                          <td id="membership_in_organizations"></td>
+                          <td id="subsidies"></td>
+                          <td id="collectables"></td>
+                          <td id="allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -1001,8 +1001,8 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                           <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                           <td id="availability_of_declarations_to_the_public"></td>
+                           <td id="declarations_published_online"></td>
                         </tr>
                      </tbody>
                   </table>
@@ -1027,8 +1027,8 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                           <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                           <td id="separate_agency_entrusted_with_asset_declaration_data_management"></td>
+                           <td id="political_independence_of_institutions_in_charge_of_asset_declaration"></td>
                         </tr>
                      </tbody>
                   </table>
@@ -1057,12 +1057,12 @@
                       </thead>
                       <tbody>
                         <tr class="responses">
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td>asdas asdasd asdasdasd</td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                          <td id="asset_declarations_verified"></td>
+                          <td id="random_ad_hoc_verification"></td>
+                          <td id="verification_based_on_published_risk_assessment_methodology"></td>
+                          <td id="verification_based_on_notifications_about_unjustified_wealth"></td>
+                          <td id="verification_in_case_of_prosecution_of_the_given_person"></td>
+                          <td id="regular_publication_of_reports_including_verification_results"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -1089,10 +1089,10 @@
                       </thead>
                       <tbody>
                         <tr class="responses">
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                          <td>asdas asdasd asdasdasd</td>
-                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                          <td id="financial_fines"></td>
+                          <td id="disciplinary_measures"></td>
+                          <td id="criminal_prosecution"></td>
+                          <td id="loss_of_mandate_or_public_office"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -1108,7 +1108,8 @@
              </div>
              <div id="timeline_for_storing_of_asset_declaration_information" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <h1 style="text-align: center; text-transform: uppercase">Forever</h1>
+                  <div id="timeline_for_storing_of_asset_declaration_information">
+                  </div>
                </div>
              </div>
            </div>
@@ -1130,8 +1131,8 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                           <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                           <td id="asset_declarations_framework_regulated_by_separate_law"></td>
+                           <td id="asset_declaration_framework_split_into_multiple_laws"></td>
                         </tr>
                      </tbody>
                   </table>
@@ -1157,9 +1158,9 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                           <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                           <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                           <td id="filled_by_hand"></td>
+                           <td id="via_central_online_system"></td>
+                           <td id="forms_filled_on_computer"></td>
                         </tr>
                      </tbody>
                   </table>
@@ -1186,10 +1187,10 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td id="published"></td>
+                        <td id="scans_of_filled_forms"></td>
+                        <td id="copiable_documents_word_pdf"></td>
+                        <td id="html_format"></td>
                      </tr>
                   </tbody>
                </table>

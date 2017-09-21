@@ -11,11 +11,6 @@ $('g').mouseover(function(e){
   $('#tooltip').css({'display': 'none'});
 });
 
-$('g').on('click', function(e){
-   jump('res-sect');
-   $('.country-name').text($(this).data('country'));
-});
-
 // Panel Collapse
 $('.collapse').on('show.bs.collapse', function(){
       $(this).parent().find('a').css("color", "#4fb0c6");
@@ -38,8 +33,23 @@ $(".collapse").each(function(){
    }
 });
 
-function jump(h) {
-    var top = document.getElementById(h).offsetTop,
-        left = document.getElementById(h).offsetLeft;
-   $("html, body").animate({ scrollTop: top });
-}
+var sticker = $('#res-sect');
+var stickerPos = sticker.position();
+$(window).scroll(function(){
+   var windowPos = $(window).scrollTop();
+   if(windowPos >= stickerPos.top) {
+      sticker.css({'position': 'sticky', 'top': '0px', 'z-index': '99'});
+   } else {
+      sticker.css({'height': '80px', 'position': 'relative', 'width': 'auto'});
+   }
+   if(windowPos >= stickerPos.top-180) {
+      $('.scrollup').fadeIn();
+   } else {
+      $('.scrollup').fadeOut();
+   }
+});
+
+$('.scrollup').on('click', function(e){
+   $("html, body").animate({ scrollTop: 0 }, "slow");
+   e.preventDefault();
+});
