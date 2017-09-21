@@ -103,9 +103,6 @@ g:hover {
    background-color: #fff;
    transition: .6s ease all;
 }
-.panel-title a:first-child {
-
-}
 .panel-title a {
    color: #625fd5;
 }

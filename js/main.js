@@ -13,11 +13,12 @@ $('g').mouseover(function(e){
 
 // Panel Collapse
 $('.collapse').on('show.bs.collapse', function(){
-      $(this).parent().find('.panel-title a').css("color", "#4fb0c6 !important");
+      $(this).parent().find('a').css("color", "#4fb0c6");
       $(this).parent().fadeIn('slow').css('background-color', '#f1f1f1');
       $(this).parent().find('.panel-heading').fadeIn('slow').css('background-color', '#f1f1f1');
       $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-up");
    }).on('hidden.bs.collapse', function(){
+      $(this).parent().find('a').css("color", "#625fd5");
       $(this).parent().fadeIn('slow').css('background-color', '#fff');
       $(this).parent().find('.panel-heading').fadeIn('slow').css('background-color', '#fff');
       $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
