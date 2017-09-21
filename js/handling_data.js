@@ -1158,7 +1158,8 @@ $('g, .next, .previous').on('click', function(e){
    $('html, body').animate({
         scrollTop: $("#res-sect").offset().top
     }, 'slow');
-   $('.results-section').fadeIn();
+   $('.results-section').fadeOut('slow').fadeIn('slow');
+   $('.country-name').fadeOut('slow').fadeIn('slow');
    handleData($(this).data('country'));
    $('.country-name').text(selectedCountryName);
    $('.country-name').attr('data-country', selectedCountryName);
@@ -1215,7 +1216,6 @@ function inArray(country, array){
       if(array[i] == "Ukraine"){
         nextCountry = array[0]
       }
-
       return {'nextCountry': nextCountry, 'previousCountry': previousCountry};
     }
   }
