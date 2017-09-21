@@ -81,6 +81,49 @@ g:hover {
   background-color: #e8f3f9;
 }
 
+/********* Results Section *********/
+.country-name-sect {
+   height: 80px;
+   background-color: #4fb0c6;
+}
+.country-name-sect .country-name {
+   margin-top: 24px;
+   margin-bottom: 23px;
+   color: #fff;
+   font-weight: bold;
+}
+.panel-default {
+   padding-top: 15px;
+   transition: .6s ease all;
+}
+.panel-group .panel+.panel {
+   margin-top: 0px;
+}
+.panel-default .panel-heading {
+   background-color: #fff;
+   transition: .6s ease all;
+}
+.panel-title a:first-child {
+
+}
+.panel-title a {
+   color: #625fd5;
+}
+.panel-title a:hover, .panel-title a:focus, .panel-title a:active {
+   text-decoration: none;
+   color: #4fb0c6;
+}
+.panel-title a .glyphicon {
+   padding-right: 6px;
+}
+.panel {
+   border: none;
+   box-shadow: none;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+   border: none;
+}
+
 @media screen and (max-width: 1440px){
 .interactive-map {
     right: 0px!important;
