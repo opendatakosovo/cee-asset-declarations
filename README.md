@@ -1,0 +1,2 @@
+# cee-asset-declarations
+cee
