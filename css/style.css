@@ -1,0 +1,88 @@
+html, body {
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  min-height: 100%!important;
+  height: 100%;
+}
+
+/********** Navbar **********/
+.navbar {
+  min-height:70px !important;
+  background-color: #ffffff;
+  border-bottom: 1px solid #888;
+  box-shadow: 0 5px 5px -5px grey;
+  margin-bottom: 0px;
+  z-index: 99;
+}
+
+.navbar-nav > li > a {
+    padding-top:25px !important; padding-bottom:25px !important;
+    height: 70px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.p-title {
+  font-weight: bold;
+  color: #625fd5;
+}
+
+.navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+      font-weight: bold;
+      color: #625fd5;
+      background-color: transparent;
+ }
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #625fd5;
+}
+
+/********* Map *********/
+path {
+  fill: #625fd5;
+  pointer-events:all;
+}
+path:hover, g:hover path {
+  cursor: pointer;
+  fill: #4fb0c6;
+}
+g:hover {
+  fill: #4fb0c6;
+}
+
+#tooltip {
+  font-weight: bold;
+  font-size: 19px;
+  color: #625fd5;
+  border: 1px solid #808080;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+.interactive-map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  height: 591px;
+  width: 1440px;
+  z-index: 2;
+  background:url("../assets/map-background.jpg") no-repeat;
+}
+.map-sect {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 591px;
+  position: relative;
+  background-color: #e8f3f9;
+}
+
+@media screen and (max-width: 1440px){
+.interactive-map {
+    right: 0px!important;
+    left: auto!important;
+}
