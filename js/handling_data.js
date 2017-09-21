@@ -1158,8 +1158,7 @@ $('g, .next, .previous').on('click', function(e){
    $('html, body').animate({
         scrollTop: $("#res-sect").offset().top
     }, 'slow');
-   $('.results-section').fadeOut('slow').fadeIn('slow');
-   $('.country-name').fadeOut('slow').fadeIn('slow');
+   $('.results-section, .country-name, .arrows-sect').fadeOut().fadeIn(200);
    handleData($(this).data('country'));
    $('.country-name').text(selectedCountryName);
    $('.country-name').attr('data-country', selectedCountryName);
