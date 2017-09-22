@@ -8,7 +8,7 @@ $('g').mouseover(function(e){
     $('#tooltip').css({'left': left, 'top': top, 'display': 'block'});
   });
 }).mouseout(function(){
-  $('#tooltip').css({'display': 'none'});
+   $('#tooltip').css({'display': 'none'});
 });
 
 // Panel Collapse
@@ -32,6 +32,7 @@ $(".collapse").each(function(){
       $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-up");
    }
 });
+
 
 if(window.location.pathname == '/cee-asset-declarations/') {
    var sticker = $('#res-sect');
@@ -96,3 +97,16 @@ $(document).ready(function(){
    }, 2000);
  });
 });
+if($(window).height() <= 657){
+   // $('#res-sect').hide();
+   $('.info-message').show();
+   $(window).scroll(function(){
+      if($(window).scrollTop() <= 40) {
+         $('.info-message').fadeIn();
+      } else {
+         $('.info-message').fadeOut();
+      }
+   });
+} else {
+   $('.info-message').hide();
+}

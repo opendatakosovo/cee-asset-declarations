@@ -1157,12 +1157,12 @@ var countries = ["Albania", "Azerbaijan", "Bosnia and Herzegovina", "Croatia", "
 
 // When clicking in a country map, or next, previous arrows
 $('g, .next, .previous').on('click', function(e){
+   $('#res-sect').show();
   var selectedCountryName = $(this).data('country');
    $('html, body').animate({
         scrollTop: $("#res-sect").offset().top
     }, 'slow');
-   $('.results-section').fadeOut('slow').fadeIn('slow');
-   $('.country-name').fadeOut('slow').fadeIn('slow');
+   $('.results-section, .country-name, .arrows-sect').fadeOut().fadeIn(140);
    handleData($(this).data('country'));
    $('.country-name').text(selectedCountryName);
    $('.country-name').attr('data-country', selectedCountryName);
@@ -1196,9 +1196,9 @@ function renderData(sectionJSONName) {
    $.each(sectionJSONName, function(key, value) {
       var finalValue = "";
       if(value == 'yes') {
-         finalValue = '<i class="fa fa-check" aria-hidden="true"></i>';
+         finalValue = '<img width="25px" src="assets/yes-shape.png" />';
       } else if(value == 'no') {
-         finalValue = '<i class="fa fa-times" aria-hidden="true"></i>';
+         finalValue = '<img width="20px" src="assets/no-shape.png" />';
       } else if(value == '') {
          finalValue = 'Unknown';
       } else {
@@ -1252,16 +1252,14 @@ $.each(jsonData, function(k, v) {
       $('.openness_of_asset_declarations tbody').append('<tr>'+countryName+'<td id="published">'+v.openness_of_asset_declarations.published+'</td><td id="scans_of_filled_forms">'+v.openness_of_asset_declarations.scans_of_filled_forms+'</td><td id="copiable_documents_word_pdf">'+v.openness_of_asset_declarations.copiable_documents_word_pdf+'</td><td id="html_format">'+v.openness_of_asset_declarations.html_format+'</td>');
    });
 
-
-
 // Changin the 'yes' and 'no' to icons
 var tables = $('.compare tbody tr');
 $.each(tables, function(k, v) {
    $(this).find('td').each(function(k, v){
       if($(this).text() == 'yes') {
-         $(this).html('<i class="fa fa-check" aria-hidden="true"></i>');
+         $(this).html('<img width="18px" src="assets/yes-shape.png" />');
       } else if ($(this).text() == 'no') {
-         $(this).html('<i class="fa fa-times" aria-hidden="true"></i>');
+         $(this).html('<img width="15px" src="assets/no-shape.png" />');
       }
    });
 });

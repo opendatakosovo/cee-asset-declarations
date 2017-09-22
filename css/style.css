@@ -163,14 +163,27 @@ td {
 .scrollup {
    width: 40px;
    height: 40px;
+   z-index: 99;
    position: fixed;
    display: none;
-   bottom: 50px;
+   bottom: 83px;
    right: 70px;
    text-indent: -9999px;
  }
  .scrollup:hover {
     cursor: pointer;
+}
+
+.info-message {
+   z-index: 99;
+   position: fixed;
+   top: 100px;
+   left: 70px;
+   background-color: #4fb0c6;
+   color: #fff;
+   display: none;
+   border: none;
+   box-shadow: 2px 2px 0px rgba(175, 175, 175, 0.4);
 }
 
 /********* Comparison Page *********/
