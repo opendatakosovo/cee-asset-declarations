@@ -1162,13 +1162,13 @@ $('g, .next, .previous').on('click', function(e){
    $('html, body').animate({
         scrollTop: $("#res-sect").offset().top
     }, 'slow');
-   $('.results-section, .country-name, .arrows-sect').fadeOut().fadeIn(140);
+   $('.results-section, .country-name, .arrows-sect').fadeOut().fadeIn(500);
    handleData($(this).data('country'));
    $('.country-name').text(selectedCountryName);
    $('.country-name').attr('data-country', selectedCountryName);
    var nextAndPreviousCountries = inArray(selectedCountryName, countries);
-   $('.next').html(nextAndPreviousCountries.nextCountry+'<i class="fa fa-arrow-right" aria-hidden="true"></i>').data('country', nextAndPreviousCountries.nextCountry);
-   $('.previous').html('<i class="fa fa-arrow-left" aria-hidden="true"></i>'+nextAndPreviousCountries.previousCountry).data('country', nextAndPreviousCountries.previousCountry);
+   $('.next').html(nextAndPreviousCountries.nextCountry+'<img class="next-arrow" src="assets/next-arrow.png" />').data('country', nextAndPreviousCountries.nextCountry);
+   $('.previous').html('<img class="previous-arrow" src="assets/previous-arrow.png" />'+nextAndPreviousCountries.previousCountry).data('country', nextAndPreviousCountries.previousCountry);
    e.preventDefault();
 });
 

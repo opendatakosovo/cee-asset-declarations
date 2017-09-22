@@ -142,12 +142,21 @@ td {
 }
 
 .next, .previous {
-  color: #625fd5;
+  color: #cbcbcb;
   cursor: pointer;
 }
-
 .next:hover, .previous:hover {
-  color: #4fb0c6;
+  color: #625fd5;
+}
+.next-arrow {
+   width: 59px;
+   padding-left: 14px;
+   margin-bottom: 5px;
+}
+.previous-arrow {
+   width: 59px;
+   padding-right: 14px;
+   margin-bottom: 5px;
 }
 
 .fa-remove:before, .fa-close:before, .fa-times:before, .fa-check:before {

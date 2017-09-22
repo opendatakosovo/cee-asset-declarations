@@ -110,3 +110,15 @@ if($(window).height() <= 657){
 } else {
    $('.info-message').hide();
 }
+
+$('.next').mouseover(function(){
+   $('.next-arrow').attr('src', 'assets/hover-next-arrow.png');
+}).mouseout(function(){
+   $('.next-arrow').attr('src', 'assets/next-arrow.png');
+});
+
+$('.previous').mouseover(function(){
+   $('.previous-arrow').attr('src', 'assets/hover-previous-arrow.png');
+}).mouseout(function(){
+   $('.previous-arrow').attr('src', 'assets/previous-arrow.png');
+});
