@@ -1,3 +1,4 @@
+// All data
 var jsonData = [{
       "name": "Albania",
       "code": "AL",
@@ -1151,14 +1152,17 @@ var jsonData = [{
       }
    }];
 
+// All countries
 var countries = ["Albania", "Azerbaijan", "Bosnia and Herzegovina", "Croatia", "Czech Republic", "Georgia", "Hungary", "Kosovo", "Latvia", "Moldova", "Poland", "Romania", "Russia", "Serbia", "Slovakia", "Slovenia", "Turkey", "Ukraine"];
 
+// When clicking in a country map, or next, previous arrows
 $('g, .next, .previous').on('click', function(e){
   var selectedCountryName = $(this).data('country');
    $('html, body').animate({
         scrollTop: $("#res-sect").offset().top
     }, 'slow');
-   $('.results-section, .country-name, .arrows-sect').fadeOut().fadeIn(200);
+   $('.results-section').fadeOut('slow').fadeIn('slow');
+   $('.country-name').fadeOut('slow').fadeIn('slow');
    handleData($(this).data('country'));
    $('.country-name').text(selectedCountryName);
    $('.country-name').attr('data-country', selectedCountryName);
@@ -1168,6 +1172,7 @@ $('g, .next, .previous').on('click', function(e){
    e.preventDefault();
 });
 
+// Handling all data to be rendered
 function handleData(countryName) {
    $.each(jsonData, function(index, value){
       if(value.name == countryName) {
@@ -1186,6 +1191,7 @@ function handleData(countryName) {
    });
 }
 
+// Rendering specific section's data into html
 function renderData(sectionJSONName) {
    $.each(sectionJSONName, function(key, value) {
       var finalValue = "";
@@ -1203,6 +1209,7 @@ function renderData(sectionJSONName) {
    });
 }
 
+// If country in array get the next and previous countries
 function inArray(country, array){
   var arrayLength = array.length;
   for(var i = 0; i < arrayLength; i++) {
@@ -1219,3 +1226,42 @@ function inArray(country, array){
     }
   }
 }
+
+// Rendering rows for comparing tables
+$.each(jsonData, function(k, v) {
+   var countryName = '<td id="country_name">'+v.name+'</td>';
+   $(".scope_asset_disclosure tbody").append(
+      '<tr>'+countryName+'<td id="ministers_members_parliament">'+v.scope_asset_disclosure.ministers_members_parliament+'</td><td id="state_municipal_higher_menagement">'+v.scope_asset_disclosure.state_municipal_higher_menagement+'</td><td id="public_service_employees">'+v.scope_asset_disclosure.public_service_employees+'</td><td id="judges_prosecutors_court_directors">'+v.scope_asset_disclosure.judges_prosecutors_court_directors+'</td><td id="managers_of_state_owned_enterprises">'+v.scope_asset_disclosure.managers_of_state_owned_enterprises+'</td><td id="grant_receivers">'+v.scope_asset_disclosure.grant_receivers+'</td><td id="relatives_of_public_officials">'+v.scope_asset_disclosure.relatives_of_public_officials+'</td><td id="other">'+v.scope_asset_disclosure.other+'</td></tr>');
+
+      $('.content_asset_declarations tbody').append('<tr>'+countryName+'<td id="income_private_public_sources">'+v.content_asset_declarations.income_private_public_sources+'</td><td id="real_estate">'+v.content_asset_declarations.real_estate+'</td><td id="movable_property">'+v.content_asset_declarations.movable_property+'</td><td id="money">'+v.content_asset_declarations.money+'</td><td id="beneficial_ownership">'+v.content_asset_declarations.beneficial_ownership+'</td><td id="management_of_NGOs">'+v.content_asset_declarations.management_of_NGOs+'</td><td id="membership_in_organizations">'+v.content_asset_declarations.membership_in_organizations+'</td><td id="subsidies">'+v.content_asset_declarations.subsidies+'</td><td id="collectables">'+v.content_asset_declarations.collectables+'</td><td id="allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly">'+v.content_asset_declarations.allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly+'</td></tr>')
+
+      $('.public_access_to_asset_declarations tbody').append('<tr>'+countryName+'<td id="availability_of_declarations_to_the_public">'+v.public_access_to_asset_declarations.availability_of_declarations_to_the_public+'</td><td id="declarations_published_online">'+v.public_access_to_asset_declarations.declarations_published_online+'</td></tr>');
+
+      $('.bodies_responsible_for_storing_and_managing_asset_declaration_data tbody').append('<tr>'+countryName+'<td id="separate_agency_entrusted_with_asset_declaration_data_management">'+v.bodies_responsible_for_storing_and_managing_asset_declaration_data.separate_agency_entrusted_with_asset_declaration_data_management+'</td><td id="political_independence_of_institutions_in_charge_of_asset_declaration">'+v.bodies_responsible_for_storing_and_managing_asset_declaration_data.political_independence_of_institutions_in_charge_of_asset_declaration+'</td>');
+
+      $('.verification_and_control_of_asset_information tbody').append('<tr>'+countryName+'<td id="asset_declarations_verified">'+v.verification_and_control_of_asset_information.asset_declarations_verified+'</td><td id="random_ad_hoc_verification">'+v.verification_and_control_of_asset_information.random_ad_hoc_verification+'</td><td id="verification_based_on_published_risk_assessment_methodology">'+v.verification_and_control_of_asset_information.verification_based_on_published_risk_assessment_methodology+'</td><td id="verification_based_on_notifications_about_unjustified_wealth">'+v.verification_and_control_of_asset_information.verification_based_on_notifications_about_unjustified_wealth+'</td><td id="verification_in_case_of_prosecution_of_the_given_person">'+v.verification_and_control_of_asset_information.verification_in_case_of_prosecution_of_the_given_person+'</td><td id="regular_publication_of_reports_including_verification_results">'+v.verification_and_control_of_asset_information.regular_publication_of_reports_including_verification_results+'</td></tr>');
+
+      $('.sanctions_for_non_declaration_and_incorrect_information tbody').append('<tr>'+countryName+'<td id="financial_fines">'+v.sanctions_for_non_declaration_and_incorrect_information.financial_fines+'</td><td id="disciplinary_measures">'+v.sanctions_for_non_declaration_and_incorrect_information.disciplinary_measures+'</td><td id="criminal_prosecution">'+v.sanctions_for_non_declaration_and_incorrect_information.criminal_prosecution+'</td><td id="loss_of_mandate_or_public_office">'+v.sanctions_for_non_declaration_and_incorrect_information.loss_of_mandate_or_public_office+'</td></tr>');
+
+      $('.timeline_for_storing_of_asset_declaration_information tbody').append('<tr>'+countryName+'<td id="timeline_for_storing_of_asset_declaration_information">'+v.timeline_for_storing_of_asset_declaration_information+'</td></tr>');
+
+      $('.clarity_of_asset_disclosure_legislation tbody').append('<tr>'+countryName+'<td id="asset_declarations_framework_regulated_by_separate_law">'+v.clarity_of_asset_disclosure_legislation.asset_declarations_framework_regulated_by_separate_law+'</td><td id="asset_declaration_framework_split_into_multiple_laws">'+v.clarity_of_asset_disclosure_legislation.asset_declaration_framework_split_into_multiple_laws+'</td>');
+
+      $('.means_of_submission_of_asset_declarations tbody').append('<tr>'+countryName+'<td id="filled_by_hand">'+v.means_of_submission_of_asset_declarations.filled_by_hand+'</td><td id="via_central_online_system">'+v.means_of_submission_of_asset_declarations.via_central_online_system+'</td><td id="forms_filled_on_computer">'+v.means_of_submission_of_asset_declarations.forms_filled_on_computer+'</td>');
+
+      $('.openness_of_asset_declarations tbody').append('<tr>'+countryName+'<td id="published">'+v.openness_of_asset_declarations.published+'</td><td id="scans_of_filled_forms">'+v.openness_of_asset_declarations.scans_of_filled_forms+'</td><td id="copiable_documents_word_pdf">'+v.openness_of_asset_declarations.copiable_documents_word_pdf+'</td><td id="html_format">'+v.openness_of_asset_declarations.html_format+'</td>');
+   });
+
+
+
+// Changin the 'yes' and 'no' to icons
+var tables = $('.compare tbody tr');
+$.each(tables, function(k, v) {
+   $(this).find('td').each(function(k, v){
+      if($(this).text() == 'yes') {
+         $(this).html('<i class="fa fa-check" aria-hidden="true"></i>');
+      } else if ($(this).text() == 'no') {
+         $(this).html('<i class="fa fa-times" aria-hidden="true"></i>');
+      }
+   });
+});
