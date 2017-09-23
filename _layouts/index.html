@@ -1,7 +1,7 @@
 {% include header.html %}
 <div class="map-sect">
    <div class="interactive-map">
-   <div id="tooltip" style="position: fixed; display:none;"></div>
+      <div id="tooltip" style="position: fixed; display:none;"></div>
       <svg version="1.1" id="InteractiveMap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1440px" height="591px" viewBox="0 0 1440 591" enable-background="new 0 0 1440 591" xml:space="preserve">
        <g class="country" data-country="Poland">
          <path class="country" data-country="Poland" fill="#C6C6C6" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
@@ -899,7 +899,7 @@
 <img src="assets/up_map.png" class="scrollup" />
 
 <div class="alert alert-warning info-message">
-  <strong>Info!</strong> Select a country on the map to begin!
+   <strong>Info!</strong> Select a country on the map to begin!
 </div>
 
 <div class="container-fluid res-sec">
@@ -910,308 +910,337 @@
    </div>
    <div style="display: none;" class="row results-section">
       <div class="panel-group" id="accordion">
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+         <!-- Panels -->
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#scope_asset_disclosure">
                  <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span> Scope of asset disclosure – type and rank of officials</a>
                </h4>
-             </div>
-             <div id="scope_asset_disclosure" class="panel-collapse container collapse in">
+            </div>
+            <div id="scope_asset_disclosure" class="panel-collapse container collapse in">
                <div class="panel-body row">
-                  <table cellspacing="0" class="table table-visu table-responsive">
-                      <thead>
-                        <tr>
-                          <th>Ministers, members of parliament</th>
-                          <th>State and municipal higher management</th>
-                          <th>Public service employees</th>
-                          <th>Judges, Prosecutors. Court Directors</th>
-                          <th>Managers of state owned enterprises</th>
-                          <th>Grant receivers</th>
-                          <th>Relatives of public officials</th>
-                          <th>Other</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="responses">
-                          <td id="ministers_members_parliament"></td>
-                          <td id="state_municipal_higher_menagement"></td>
-                          <td id="public_service_employees"></td>
-                          <td id="judges_prosecutors_court_directors"></td>
-                          <td id="managers_of_state_owned_enterprises"></td>
-                          <td id="grant_receivers"></td>
-                          <td id="relatives_of_public_officials"></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table cellspacing="0" class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th>Ministers, members of parliament</th>
+                              <th>State and municipal higher management</th>
+                              <th>Public service employees</th>
+                              <th>Judges, Prosecutors. Court Directors</th>
+                              <th>Managers of state owned enterprises</th>
+                              <th>Grant receivers</th>
+                              <th>Relatives of public officials</th>
+                              <th>Other</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="responses">
+                              <td id="ministers_members_parliament"></td>
+                              <td id="state_municipal_higher_menagement"></td>
+                              <td id="public_service_employees"></td>
+                              <td id="judges_prosecutors_court_directors"></td>
+                              <td id="managers_of_state_owned_enterprises"></td>
+                              <td id="grant_receivers"></td>
+                              <td id="relatives_of_public_officials"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#content_asset_declarations">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Content of asset declarations</a>
                </h4>
-             </div>
-             <div id="content_asset_declarations" class="panel-collapse container collapse">
+            </div>
+            <div id="content_asset_declarations" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table cellspacing="0" class="table table-visu table-responsive">
-                      <thead>
-                        <tr>
-                          <th>Income (from private and public sources)</th>
-                          <th>Real estate (buildings, apartments, land and agricultural property and other)</th>
-                          <th>Movable property (cars, boats and other)</th>
-                          <th>Money (cash, bank accounts, foreign currency, credits, obligations)</th>
-                          <th>Beneficial ownership (company management, board members, shares, stocks, gifts)</th>
-                          <th>Management of NGOs</th>
-                          <th>Membership in organisations</th>
-                          <th>Subsidies</th>
-                          <th>Collectables (such as art works)</th>
-                          <th>Allowances and benefits accruing to the official from the political party or national assembly</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="responses">
-                          <td id="income_private_public_sources"></td>
-                          <td id="real_estate"></td>
-                          <td id="movable_property"></td>
-                          <td id="money"></td>
-                          <td id="beneficial_ownership"></td>
-                          <td id="management_of_NGOs"></td>
-                          <td id="membership_in_organizations"></td>
-                          <td id="subsidies"></td>
-                          <td id="collectables"></td>
-                          <td id="allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly"></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table cellspacing="0" class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th>Income (from private and public sources)</th>
+                              <th>Real estate (buildings, apartments, land and agricultural property and other)</th>
+                              <th>Movable property (cars, boats and other)</th>
+                              <th>Money (cash, bank accounts, foreign currency, credits, obligations)</th>
+                              <th>Beneficial ownership (company management, board members, shares, stocks, gifts)</th>
+                              <th>Management of NGOs</th>
+                              <th>Membership in organisations</th>
+                              <th>Subsidies</th>
+                              <th>Collectables (such as art works)</th>
+                              <th>Allowances and benefits accruing to the official from the political party or national assembly</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="responses">
+                              <td id="income_private_public_sources"></td>
+                              <td id="real_estate"></td>
+                              <td id="movable_property"></td>
+                              <td id="money"></td>
+                              <td id="beneficial_ownership"></td>
+                              <td id="management_of_NGOs"></td>
+                              <td id="membership_in_organizations"></td>
+                              <td id="subsidies"></td>
+                              <td id="collectables"></td>
+                              <td id="allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#public_access_to_asset_declarations">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Public Access to asset declarations</a>
                </h4>
-             </div>
-             <div id="public_access_to_asset_declarations" class="panel-collapse container collapse">
+            </div>
+            <div id="public_access_to_asset_declarations" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table class="table table-visu table-responsive">
-                     <thead>
-                        <tr>
-                           <th style="text-align: center">Availability of declarations to the public</th>
-                           <th style="text-align: center">Declarations published online</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td id="availability_of_declarations_to_the_public"></td>
-                           <td id="declarations_published_online"></td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th style="text-align: center">Availability of declarations to the public</th>
+                              <th style="text-align: center">Declarations published online</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td id="availability_of_declarations_to_the_public"></td>
+                              <td id="declarations_published_online"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#bodies_responsible_for_storing_and_managing_asset_declaration_data">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Bodies responsible for storing and managing asset declaration data</a>
                </h4>
-             </div>
-             <div id="bodies_responsible_for_storing_and_managing_asset_declaration_data" class="panel-collapse container collapse">
+            </div>
+            <div id="bodies_responsible_for_storing_and_managing_asset_declaration_data" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table class="table table-visu table-responsive">
-                     <thead>
-                        <tr>
-                           <th style="text-align: center">Separate agency entrusted with asset declaration data management</th>
-                           <th style="text-align: center">Political independence of institutions in charge of asset declaration</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td id="separate_agency_entrusted_with_asset_declaration_data_management"></td>
-                           <td id="political_independence_of_institutions_in_charge_of_asset_declaration"></td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th style="text-align: center">Separate agency entrusted with asset declaration data management</th>
+                              <th style="text-align: center">Political independence of institutions in charge of asset declaration</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td id="separate_agency_entrusted_with_asset_declaration_data_management"></td>
+                              <td id="political_independence_of_institutions_in_charge_of_asset_declaration"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#verification_and_control_of_asset_information">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Verification and control of asset information</a>
                </h4>
-             </div>
-             <div id="verification_and_control_of_asset_information" class="panel-collapse container collapse">
+            </div>
+            <div id="verification_and_control_of_asset_information" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table cellspacing="0" class="table table-visu table-responsive">
-                      <thead>
-                        <tr>
-                          <th>Asset declarations verified</th>
-                          <th>Random/Ad hoc verification</th>
-                          <th>Verification based on published risk assessment methodology</th>
-                          <th>Verification based on notifications about unjustified wealth</th>
-                          <th>Verification in case of prosecution of the given person</th>
-                          <th>Regular publication of reports including verification results</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="responses">
-                          <td id="asset_declarations_verified"></td>
-                          <td id="random_ad_hoc_verification"></td>
-                          <td id="verification_based_on_published_risk_assessment_methodology"></td>
-                          <td id="verification_based_on_notifications_about_unjustified_wealth"></td>
-                          <td id="verification_in_case_of_prosecution_of_the_given_person"></td>
-                          <td id="regular_publication_of_reports_including_verification_results"></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table cellspacing="0" class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th>Asset declarations verified</th>
+                              <th>Random/Ad hoc verification</th>
+                              <th>Verification based on published risk assessment methodology</th>
+                              <th>Verification based on notifications about unjustified wealth</th>
+                              <th>Verification in case of prosecution of the given person</th>
+                              <th>Regular publication of reports including verification results</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="responses">
+                              <td id="asset_declarations_verified"></td>
+                              <td id="random_ad_hoc_verification"></td>
+                              <td id="verification_based_on_published_risk_assessment_methodology"></td>
+                              <td id="verification_based_on_notifications_about_unjustified_wealth"></td>
+                              <td id="verification_in_case_of_prosecution_of_the_given_person"></td>
+                              <td id="regular_publication_of_reports_including_verification_results"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#sanctions_for_non_declaration_and_incorrect_information">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Sanctions for non-declaration and incorrect information</a>
                </h4>
-             </div>
-             <div id="sanctions_for_non_declaration_and_incorrect_information" class="panel-collapse container collapse">
+            </div>
+            <div id="sanctions_for_non_declaration_and_incorrect_information" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table cellspacing="0" class="table table-visu table-responsive">
-                      <thead>
-                        <tr>
-                          <th style="text-align: center;">Financial fines</th>
-                          <th style="text-align: center;">Disciplinary measures</th>
-                          <th style="text-align: center;">Criminal prosecution</th>
-                          <th style="text-align: center;">Loss of mandate or public office</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="responses">
-                          <td id="financial_fines"></td>
-                          <td id="disciplinary_measures"></td>
-                          <td id="criminal_prosecution"></td>
-                          <td id="loss_of_mandate_or_public_office"></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table cellspacing="0" class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th style="text-align: center;">Financial fines</th>
+                              <th style="text-align: center;">Disciplinary measures</th>
+                              <th style="text-align: center;">Criminal prosecution</th>
+                              <th style="text-align: center;">Loss of mandate or public office</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="responses">
+                              <td id="financial_fines"></td>
+                              <td id="disciplinary_measures"></td>
+                              <td id="criminal_prosecution"></td>
+                              <td id="loss_of_mandate_or_public_office"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#timeline_for_storing_of_asset_declaration_information">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Timeline for storing of asset declaration information</a>
                </h4>
-             </div>
-             <div id="timeline_for_storing_of_asset_declaration_information" class="panel-collapse container collapse">
+            </div>
+            <div id="timeline_for_storing_of_asset_declaration_information" class="panel-collapse container collapse">
                <div class="panel-body">
                   <div id="timeline_for_storing_of_asset_declaration_information">
                   </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#clarity_of_asset_disclosure_legislation">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Clarity of asset disclosure legislation</a>
                </h4>
-             </div>
-             <div id="clarity_of_asset_disclosure_legislation" class="panel-collapse container collapse">
+            </div>
+            <div id="clarity_of_asset_disclosure_legislation" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table class="table table-visu table-responsive">
-                     <thead>
-                        <tr>
-                           <th style="text-align: center">Asset declarations framework regulated by separate law</th>
-                           <th style="text-align: center">Asset declaration framework split into multiple laws</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td id="asset_declarations_framework_regulated_by_separate_law"></td>
-                           <td id="asset_declaration_framework_split_into_multiple_laws"></td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th style="text-align: center">Asset declarations framework regulated by separate law</th>
+                              <th style="text-align: center">Asset declaration framework split into multiple laws</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td id="asset_declarations_framework_regulated_by_separate_law"></td>
+                              <td id="asset_declaration_framework_split_into_multiple_laws"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#means_of_submission_of_asset_declarations">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Means of submission of asset declarations</a>
                </h4>
-             </div>
-             <div id="means_of_submission_of_asset_declarations" class="panel-collapse container collapse">
+            </div>
+            <div id="means_of_submission_of_asset_declarations" class="panel-collapse container collapse">
                <div class="panel-body">
-                  <table class="table table-visu table-responsive">
-                     <thead>
-                        <tr>
-                           <th style="text-align: center">Filled by hand</th>
-                           <th style="text-align: center">Via central online system</th>
-                           <th style="text-align: center">Forms filled on computer</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td id="filled_by_hand"></td>
-                           <td id="via_central_online_system"></td>
-                           <td id="forms_filled_on_computer"></td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th style="text-align: center">Filled by hand</th>
+                              <th style="text-align: center">Via central online system</th>
+                              <th style="text-align: center">Forms filled on computer</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td id="filled_by_hand"></td>
+                              <td id="via_central_online_system"></td>
+                              <td id="forms_filled_on_computer"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-           <div class="panel panel-default container-fluid">
-             <div class="panel-heading container">
+            </div>
+         </div>
+
+         <div class="panel panel-default container-fluid">
+            <div class="panel-heading container">
                <h4 class="panel-title">
                  <a data-toggle="collapse" data-parent="#accordion" href="#openness_of_asset_declarations">
                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Openness of asset declarations</a>
                </h4>
-             </div>
-             <div id="openness_of_asset_declarations" class="panel-collapse container collapse">
+            </div>
+            <div id="openness_of_asset_declarations" class="panel-collapse container collapse">
                <div class="panel-body">
-               <table class="table table-visu table-responsive">
-                  <thead>
-                     <tr>
-                        <th style="text-align: center">Published</th>
-                        <th style="text-align: center">Scans of filled forms</th>
-                        <th style="text-align: center">Copiable documents (word, pdf)</th>
-                        <th style="text-align: center">HTML format</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td id="published"></td>
-                        <td id="scans_of_filled_forms"></td>
-                        <td id="copiable_documents_word_pdf"></td>
-                        <td id="html_format"></td>
-                     </tr>
-                  </tbody>
-               </table>
+                  <div class="table-responsive visualization-responsive-table">
+                     <table class="table table-visu">
+                        <thead>
+                           <tr>
+                              <th style="text-align: center">Published</th>
+                              <th style="text-align: center">Scans of filled forms</th>
+                              <th style="text-align: center">Copiable documents (word, pdf)</th>
+                              <th style="text-align: center">HTML format</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td id="published"></td>
+                              <td id="scans_of_filled_forms"></td>
+                              <td id="copiable_documents_word_pdf"></td>
+                              <td id="html_format"></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
-             </div>
-           </div>
-        </div>
-    </div>
-    <div class="container arrows-sect">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container arrows-sect">
       <div class="col-md-4">
-        <h3 data-country class="previous"></h3>
+         <h3 data-country class="previous"></h3>
       </div>
       <div class="col-md-offset-4 col-md-4">
-        <h3 data-country class="next pull-right"></h3>
+         <h3 data-country class="next pull-right"></h3>
       </div>
-    </div>
+   </div>
 </div>
 {% include footer.html %}

@@ -1,158 +1,201 @@
 html, body {
-  font-family: Raleway, sans-serif!important;
-  width: 100%;
-  min-height: 100%!important;
-  height: 100%;
+   font-family: Raleway, sans-serif!important;
+   width: 100%;
+   min-height: 100%!important;
+   height: 100%;
 }
 
 /********** Navbar **********/
+
 .navbar {
-  min-height:70px !important;
-  background-color: #ffffff;
-  border-bottom: 1px solid #888;
-  box-shadow: 0 5px 5px -5px grey;
-  margin-bottom: 0px;
-  z-index: 99;
+   min-height: 70px !important;
+   background-color: #ffffff;
+   border-bottom: 1px solid #888;
+   box-shadow: 0 5px 5px -5px grey;
+   margin-bottom: 0px;
+   z-index: 99;
 }
 
-.navbar-nav > li > a {
-    padding-top:25px !important; padding-bottom:25px !important;
-    height: 70px;
-    text-transform: uppercase;
-    font-size: 14px;
+.navbar-nav>li>a {
+   padding-top: 25px !important;
+   padding-bottom: 25px !important;
+   height: 70px;
+   text-transform: uppercase;
+   font-size: 14px;
 }
 
 .p-title {
-  font-weight: bold;
-  color: #625fd5;
+   font-weight: bold;
+   color: #625fd5;
 }
 
-.navbar-default .navbar-nav > .active > a,
- .navbar-default .navbar-nav > .active > a:hover,
- .navbar-default .navbar-nav > .active > a:focus {
-      font-weight: bold;
-      color: #625fd5;
-      background-color: transparent;
- }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+   font-weight: bold;
+   color: #625fd5;
+   background-color: transparent;
+}
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #625fd5;
+   color: #625fd5;
 }
 
 /********* Map *********/
+
 path {
-  fill: #625fd5;
-  pointer-events:all;
+   fill: #625fd5;
+   pointer-events: all;
 }
+
 path:hover, g:hover path {
-  cursor: pointer;
-  fill: #4fb0c6;
+   cursor: pointer;
+   fill: #4fb0c6;
 }
+
 g:hover {
-  fill: #4fb0c6;
+   fill: #4fb0c6;
 }
 
 #tooltip {
-  font-weight: bold;
-  font-size: 19px;
-  color: #625fd5;
-  border: 1px solid #808080;
-  background-color: #fff;
-  padding-left: 5px;
-  padding-right: 5px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+   font-weight: bold;
+   font-size: 19px;
+   color: #625fd5;
+   border: 1px solid #808080;
+   background-color: #fff;
+   padding-left: 5px;
+   padding-right: 5px;
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
+
 .interactive-map {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  height: 591px;
-  width: 1440px;
-  z-index: 2;
-  background:url("../assets/map-background.jpg") no-repeat;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   margin: auto;
+   height: 591px;
+   width: 1440px;
+   z-index: 2;
+   background: url("../assets/map-background.jpg") no-repeat;
 }
+
 .map-sect {
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 591px;
-  position: relative;
-  background-color: #e8f3f9;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 591px;
+   position: relative;
+   background-color: #e8f3f9;
 }
 
 /********* Results Section *********/
+
 .country-name-sect {
    height: 80px;
    background-color: #4fb0c6;
 }
+
 .country-name-sect .country-name {
    margin-top: 24px;
    margin-bottom: 23px;
    color: #fff;
    font-weight: bold;
 }
+
 .panel-default {
    padding-top: 15px;
    transition: .6s ease all;
 }
+
 .panel-group .panel+.panel {
    margin-top: 0px;
 }
+
 .panel-default .panel-heading {
    background-color: #fff;
    transition: .6s ease all;
 }
+
 .panel-title a {
    color: #625fd5;
 }
+
 .panel-title a:hover, .panel-title a:focus, .panel-title a:active {
    text-decoration: none;
    color: #4fb0c6;
 }
+
 .panel-title a .glyphicon {
    padding-right: 6px;
    top: 3px;
 }
+
 .panel {
    border: none;
    box-shadow: none;
 }
-.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
    border: none;
 }
 
-.table.table-visu thead > tr > th { border-bottom: none; }
-.table.table-visu thead > tr > th, .table.table-visu tbody > tr > th, .table.table-visu tfoot > tr > th, .table.table-visu thead > tr > td, .table.table-visu tbody > tr > td, .table.table-visu tfoot > tr > td { border: 0px solid #2980B9; }
-td {
-  text-align: center;
+.table.table-visu thead>tr>th {
+   border-bottom: none;
+}
+
+.table.table-visu thead>tr>th, .table.table-visu tbody>tr>th, .table.table-visu tfoot>tr>th, .table.table-visu thead>tr>td, .table.table-visu tbody>tr>td, .table.table-visu tfoot>tr>td {
+   border: 0px solid #2980B9;
+}
+
+.visualization-responsive-table {
+   border: none;
+}
+
+.circle {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
   vertical-align: middle;
-  text-transform: capitalize;
+  svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+ }
+
+td {
+   text-align: center;
+   vertical-align: middle;
+   text-transform: capitalize;
 }
 
 .fa-arrow-left {
-  padding-right: 12px;
+   padding-right: 12px;
 }
+
 .fa-arrow-right {
-  padding-left: 12px;
+   padding-left: 12px;
 }
 
 .arrows-sect {
-  margin-bottom: 25px;
+   margin-bottom: 25px;
 }
 
 .next, .previous {
-  color: #cbcbcb;
-  cursor: pointer;
+   color: #cbcbcb;
+   cursor: pointer;
 }
+
 .next:hover, .previous:hover {
-  color: #625fd5;
+   color: #625fd5;
 }
+
 .next-arrow {
    width: 59px;
    padding-left: 14px;
    margin-bottom: 5px;
 }
+
 .previous-arrow {
    width: 59px;
    padding-right: 14px;
@@ -162,9 +205,11 @@ td {
 .fa-remove:before, .fa-close:before, .fa-times:before, .fa-check:before {
    font-size: 25px;
 }
+
 .fa-times {
    color: #e55f5f;
 }
+
 .fa-check {
    color: #42be76;
 }
@@ -178,9 +223,10 @@ td {
    bottom: 83px;
    right: 70px;
    text-indent: -9999px;
- }
- .scrollup:hover {
-    cursor: pointer;
+}
+
+.scrollup:hover {
+   cursor: pointer;
 }
 
 .info-message {
@@ -196,6 +242,7 @@ td {
 }
 
 /********* Comparison Page *********/
+
 .compare-title {
    font-weight: bold;
    text-align: center;
@@ -212,12 +259,12 @@ td {
    padding-bottom: 20px;
 }
 
-.fixed{
-  top:0;
-  position:fixed;
-  width:auto;
-  display:none;
-  border:none;
+.fixed {
+   top: 0;
+   position: fixed;
+   width: auto;
+   display: none;
+   border: none;
 }
 
 table thead {
@@ -229,13 +276,12 @@ table.compare {
 }
 
 table.compare th, table.compare td {
-   text-align:center;
-    vertical-align:middle !important;
+   text-align: center;
+   vertical-align: middle !important;
 }
 
-
-@media screen and (max-width: 1440px){
-.interactive-map {
-    right: 0px!important;
-    left: auto!important;
-}
+@media screen and (max-width: 1440px) {
+   .interactive-map {
+      right: 0px!important;
+      left: auto!important;
+   }
