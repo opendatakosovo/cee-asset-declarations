@@ -43,6 +43,13 @@ $(".collapse").each(function() {
    }
 });
 
+console.log(window.location.pathname);
+
+if(window.location.pathname == '/cee-asset-declarations/' || window.location.pathname == '/cee-asset-declarations/the-report' || window.location.pathname == '/cee-asset-declarations/compare') {
+  // Footer
+  $('.footer').css({'height': '28px'});
+}
+
 
 if (window.location.pathname == '/cee-asset-declarations/') {
    var sticker = $('#res-sect');
