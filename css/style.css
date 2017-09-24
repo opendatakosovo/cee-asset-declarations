@@ -145,6 +145,26 @@ g:hover {
    border: 0px solid #2980B9;
 }
 
+.table-title {
+   border-top: 2px solid #333;
+   border-style: hidden;
+   background-color: #fbfbfb;
+   font-size: 17px;
+   color: #665fd5;
+}
+
+/*.cont table {
+  border-collapse: collapse;
+  border: solid 1px #000;
+}
+.cont table thead th.table-title {
+  border: solid 1px #000;
+}
+.no-border {
+  border: solid 1px #FFF!important;
+  color: red;
+}*/
+
 .visualization-responsive-table {
    border: none;
 }

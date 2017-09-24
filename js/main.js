@@ -66,6 +66,7 @@ if (window.location.pathname == '/cee-asset-declarations/') {
    });
 }
 
+
 $('.scrollup').on('click', function(e) {
    $("html, body").animate({
       scrollTop: 0
