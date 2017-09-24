@@ -17,6 +17,10 @@ $('g').mouseover(function(e) {
    });
 });
 
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 // Panel Collapse
 $('.collapse').on('show.bs.collapse', function() {
    $(this).parent().find('a').css("color", "#4fb0c6");

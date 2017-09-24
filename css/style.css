@@ -262,7 +262,6 @@ td {
 }
 
 /********* Comparison Page *********/
-
 .compare-title {
    font-weight: bold;
    text-align: center;
@@ -298,6 +297,19 @@ table.compare {
 table.compare th, table.compare td {
    text-align: center;
    vertical-align: middle !important;
+}
+
+/********* The report Page *********/
+.the-report p {
+  text-align: justify;
+}
+
+.footnote {
+  cursor: pointer;
+}
+
+.report-table tbody td {
+  text-align: left;
 }
 
 @media screen and (max-width: 1440px) {
