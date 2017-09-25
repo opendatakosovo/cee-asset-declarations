@@ -45,7 +45,7 @@ $(".collapse").each(function() {
 
 console.log(window.location.pathname);
 
-if(window.location.pathname == '/cee-asset-declarations/' || window.location.pathname == '/cee-asset-declarations/the-report' || window.location.pathname == '/cee-asset-declarations/compare') {
+if(window.location.pathname == '/cee-asset-declarations/' || window.location.pathname == '/cee-asset-declarations/the-report' || window.location.pathname == '/cee-asset-declarations/compare' || window.location.pathname == '/cee-asset-declarations/about') {
   // Footer
   $('.footer').css({'height': '28px'});
 }

@@ -355,6 +355,11 @@ table.compare th, table.compare td {
   padding-top: 10px;
 }
 
+.partner-img {
+   margin-top: 15px;
+   margin-right: 40px;
+}
+
 /********* Media Queries *******/
 @media screen and (max-width: 1440px) {
    .interactive-map {
