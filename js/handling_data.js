@@ -1148,7 +1148,7 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "no",
-      "html_format": "Downloadable readable PDFs, JSON(API)"
+      "html_format": "Downloadable readable PDFs, JSON (API)"
       }
    }];
 
