@@ -1182,7 +1182,7 @@ function handleData(countryName) {
          renderData(value.bodies_responsible_for_storing_and_managing_asset_declaration_data);
          renderData(value.verification_and_control_of_asset_information);
          renderData(value.sanctions_for_non_declaration_and_incorrect_information);
-         $('#timeline_for_storing_of_asset_declaration_information').html('<h1 style="text-align: center; text-transform: uppercase">'+value.timeline_for_storing_of_asset_declaration_information+'</h1>');
+         $('#timeline_for_storing_of_asset_declaration_information').html('<h1 style="text-align: center;">'+value.timeline_for_storing_of_asset_declaration_information+'</h1>');
          renderData(value.clarity_of_asset_disclosure_legislation);
          renderData(value.means_of_submission_of_asset_declarations);
          renderData(value.openness_of_asset_declarations);
