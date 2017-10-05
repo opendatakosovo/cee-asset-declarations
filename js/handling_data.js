@@ -1182,7 +1182,7 @@ function handleData(countryName) {
          renderData(value.bodies_responsible_for_storing_and_managing_asset_declaration_data);
          renderData(value.verification_and_control_of_asset_information);
          renderData(value.sanctions_for_non_declaration_and_incorrect_information);
-         $('#timeline_for_storing_of_asset_declaration_information').html('<h1 style="text-align: center;">'+value.timeline_for_storing_of_asset_declaration_information+'</h1>');
+         $('#timeline_for_storing_of_asset_declaration_information').html('<h1 style="text-align: left;">'+value.timeline_for_storing_of_asset_declaration_information+'</h1>');
          renderData(value.clarity_of_asset_disclosure_legislation);
          renderData(value.means_of_submission_of_asset_declarations);
          renderData(value.openness_of_asset_declarations);
@@ -1196,9 +1196,9 @@ function renderData(sectionJSONName) {
    $.each(sectionJSONName, function(key, value) {
       var finalValue = "";
       if(value == 'yes') {
-         finalValue = '<img width="25px" src="assets/yes-shape.png" />';
+         finalValue = '<img class="shape" width="25px" src="assets/yes-shape.png" />';
       } else if(value == 'no') {
-         finalValue = '<img width="20px" src="assets/no-shape.png" />';
+         finalValue = '<img class="shape" width="20px" src="assets/no-shape.png" />';
       } else if(value == '') {
          finalValue = 'Unknown';
       } else {
@@ -1206,6 +1206,7 @@ function renderData(sectionJSONName) {
       }
 
       $('#'+key).html(finalValue);
+      $('.'+key).html(finalValue);
    });
 }
 
@@ -1257,9 +1258,9 @@ var tables = $('.compare tbody tr');
 $.each(tables, function(k, v) {
    $(this).find('td').each(function(k, v){
       if($(this).text() == 'yes') {
-         $(this).html('<img width="18px" src="assets/yes-shape.png" />');
+         $(this).html('<img class="shape" width="18px" src="assets/yes-shape.png" />');
       } else if ($(this).text() == 'no') {
-         $(this).html('<img width="15px" src="assets/no-shape.png" />');
+         $(this).html('<img class="shape" width="15px" src="assets/no-shape.png" />');
       }
    });
 });
