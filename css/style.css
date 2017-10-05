@@ -92,6 +92,8 @@ g:hover {
 }
 
 #tooltip {
+   position: fixed;
+   display: none;
    font-weight: bold;
    font-size: 19px;
    color: #625fd5;
@@ -100,6 +102,10 @@ g:hover {
    padding-left: 5px;
    padding-right: 5px;
    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.svg-container {
+   width: 10em;
 }
 
 .interactive-map {
@@ -388,6 +394,17 @@ table.compare th, table.compare td {
 @media screen and (max-width: 480px) {
    .nav>li {
       height: 50px;
+   }
+   .map-sect {
+      height: 400px;
+   }
+   .interactive-map {
+      width: 821px;
+      height: 400px;
+      background: #e8f3f9;
+   }
+   .info-message {
+      display: none!important;
    }
    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-nav>li>a {
       padding-top: 14px!important;

@@ -1,3 +1,5 @@
+$('body').bind('touchstart', function() {});
+
 // Showing the tooltip
 $('g').mouseover(function(e) {
    var countryName = $(this).data('country');
@@ -15,6 +17,10 @@ $('g').mouseover(function(e) {
    $('#tooltip').css({
       'display': 'none'
    });
+});
+
+$('g').click(() => {
+   $('#tooltip').fadeOut('slow');
 });
 
 // Tooltip for footnotes
@@ -63,7 +69,7 @@ if (window.location.pathname == '/cee-asset-declarations/') {
          });
       } else {
          sticker.css({
-            'height': '80px',
+            'height': 'auto',
             'position': 'relative',
             'width': 'auto'
          });
