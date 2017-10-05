@@ -17,6 +17,7 @@ $('g').mouseover(function(e) {
    });
 });
 
+// Tooltip for footnotes
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
@@ -43,13 +44,11 @@ $(".collapse").each(function() {
    }
 });
 
-console.log(window.location.pathname);
-
+// Height of footer based on pages
 if(window.location.pathname == '/cee-asset-declarations/' || window.location.pathname == '/cee-asset-declarations/the-report' || window.location.pathname == '/cee-asset-declarations/compare' || window.location.pathname == '/cee-asset-declarations/about') {
   // Footer
   $('.footer').css({'height': '28px'});
 }
-
 
 if (window.location.pathname == '/cee-asset-declarations/') {
    var sticker = $('#res-sect');
@@ -77,7 +76,6 @@ if (window.location.pathname == '/cee-asset-declarations/') {
    });
 }
 
-
 $('.scrollup').on('click', function(e) {
    $("html, body").animate({
       scrollTop: 0
@@ -90,6 +88,7 @@ $(".table.with-responsive-wrapper").floatThead({
       return $table.closest(".table-responsive");
    }
 });
+
 
 if ($(window).height() <= 657) {
    // $('#res-sect').hide();
