@@ -39,6 +39,11 @@ data_dir: ./_data
 
 include: [node_modules, scss, _pages, _posts, _testimonials, css, js]
 
+# Serving
+detach:  false
+port:    4040
+host:    0.0.0.0
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

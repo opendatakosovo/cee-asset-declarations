@@ -1,6 +1,4 @@
-$('body').bind('touchstart', function() {});
-
-// Showing the tooltip
+// Showing the tooltip on hover of countries
 $('g').mouseover(function(e) {
    var countryName = $(this).data('country');
    $(this).mousemove(function(e) {
@@ -19,6 +17,7 @@ $('g').mouseover(function(e) {
    });
 });
 
+// Handle click on countries
 $('g').click(() => {
    $('#tooltip').fadeOut('slow');
 });
@@ -40,7 +39,6 @@ $('.collapse').on('show.bs.collapse', function() {
    $(this).parent().find('.panel-heading').fadeIn('slow').css('background-color', '#fff');
    $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
 });
-
 $(".collapse").each(function() {
    if ($(this).hasClass("in")) {
       $(this).parent().find('a').css("color", "#4fb0c6");
@@ -56,6 +54,7 @@ if(window.location.pathname == '/cee-asset-declarations/' || window.location.pat
   $('.footer').css({'height': '28px'});
 }
 
+// Showing the "Go to map" button in index page
 if (window.location.pathname == '/cee-asset-declarations/') {
    var sticker = $('#res-sect');
    var stickerPos = sticker.position();
@@ -81,7 +80,6 @@ if (window.location.pathname == '/cee-asset-declarations/') {
       }
    });
 }
-
 $('.scrollup').on('click', function(e) {
    $("html, body").animate({
       scrollTop: 0
@@ -89,13 +87,22 @@ $('.scrollup').on('click', function(e) {
    e.preventDefault();
 });
 
-$(".table.with-responsive-wrapper").floatThead({
-   responsiveContainer: function($table) {
-      return $table.closest(".table-responsive");
-   }
-});
+// Fixing headers of tables only in medium and big screen sizes
+if ($(window).width() > 480) {
+  $(".table.with-responsive-wrapper").floatThead({
+     responsiveContainer: function($table) {
+        return $table.closest(".table-responsive");
+     }
+  });
+}
 
+// Compare tables responsiveness for mobile sizes
+if ($(window).width() <= 480) {
+  $('.table-title').remove();
+  $('.table-sm-title').show();
+}
 
+// Showing the message in smaller screen sizes
 if ($(window).height() <= 657) {
    // $('#res-sect').hide();
    $('.info-message').show();
@@ -110,12 +117,12 @@ if ($(window).height() <= 657) {
    $('.info-message').hide();
 }
 
+// Hovering on next and previous countries
 $('.next').mouseover(function() {
    $('.next-arrow').attr('src', 'assets/hover-next-arrow.png');
 }).mouseout(function() {
    $('.next-arrow').attr('src', 'assets/next-arrow.png');
 });
-
 $('.previous').mouseover(function() {
    $('.previous-arrow').attr('src', 'assets/hover-previous-arrow.png');
 }).mouseout(function() {

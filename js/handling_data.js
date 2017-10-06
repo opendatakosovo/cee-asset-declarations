@@ -1194,6 +1194,7 @@ function handleData(countryName) {
 // Rendering specific section's data into html
 function renderData(sectionJSONName) {
    $.each(sectionJSONName, function(key, value) {
+
       var finalValue = "";
       if(value == 'yes') {
          finalValue = '<img class="shape" width="25px" src="assets/yes-shape.png" />';
@@ -1231,6 +1232,13 @@ function inArray(country, array){
 // Rendering rows for comparing tables
 $.each(jsonData, function(k, v) {
    var countryName = '<td id="country_name">'+v.name+'</td>';
+
+   if($(window).width() <= 480) {
+      if(v.name == "Bosnia and Herzegovina") {
+        countryName = '<td id="country_name">BiH</td>';
+      }
+   }
+
    $(".scope_asset_disclosure tbody").append(
       '<tr>'+countryName+'<td id="ministers_members_parliament">'+v.scope_asset_disclosure.ministers_members_parliament+'</td><td id="state_municipal_higher_menagement">'+v.scope_asset_disclosure.state_municipal_higher_menagement+'</td><td id="public_service_employees">'+v.scope_asset_disclosure.public_service_employees+'</td><td id="judges_prosecutors_court_directors">'+v.scope_asset_disclosure.judges_prosecutors_court_directors+'</td><td id="managers_of_state_owned_enterprises">'+v.scope_asset_disclosure.managers_of_state_owned_enterprises+'</td><td id="grant_receivers">'+v.scope_asset_disclosure.grant_receivers+'</td><td id="relatives_of_public_officials">'+v.scope_asset_disclosure.relatives_of_public_officials+'</td><td id="other">'+v.scope_asset_disclosure.other+'</td></tr>');
 

@@ -24,7 +24,6 @@ body {
 }
 
 /********** Navbar **********/
-
 .navbar, .navbar-header {
    min-height: 70px !important;
    background-color: #ffffff;
@@ -32,6 +31,10 @@ body {
    box-shadow: 0 5px 5px -5px grey;
    margin-bottom: 0px;
    z-index: 99;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  border: none;
 }
 
 .navbar-nav>li>a {
@@ -195,6 +198,14 @@ g:hover {
    color: #665fd5;
 }
 
+.table-sm-title {
+  font-size: 19px;
+  color: #665fd5;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
+
 /*.cont table {
   border-collapse: collapse;
   border: solid 1px #000;
@@ -348,6 +359,7 @@ table.compare th, table.compare td {
 /********* The report Page *********/
 .the-report p {
   text-align: justify;
+  font-size: 16px;
 }
 
 .footnote {
@@ -362,11 +374,15 @@ table.compare th, table.compare td {
 /********* Footer ***********/
 .footer {
   position: absolute;
-  bottom: 0;
+  /*bottom: 0;*/
   padding-top: 7px;
   width: 100%;
-  /*height: 28px;*/
+  height: auto!important;
   background-color: #fff;
+}
+
+.odk-logo-foot {
+  text-align: right;
 }
 
 .foot {
@@ -426,13 +442,27 @@ table.compare th, table.compare td {
    }
 
 @media screen and (max-width: 480px) {
+    .odk-logo-foot, .foot-logo {
+      text-align: center;
+    }
+
+    .footer {
+      margin-bottom: 10px;
+    }
+
+    .table-responsive {
+      border: none;
+    }
+
    .previous, .next {
       text-align: center;
       font-size: 18px;
    }
+
    .arrows-sect {
       padding: 0;
    }
+
    .info-message,
    #index_scope_asset_disclosure,
    #index_content_asset_declarations,
