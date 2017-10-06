@@ -431,6 +431,10 @@ table.compare th, table.compare td {
   width: auto;
 }
 
+.table-responsive {
+   border: none;
+}
+
 .dl-horizontal dt {
    float: left;
    width: 160px;
@@ -439,6 +443,10 @@ table.compare th, table.compare td {
    clear: left;
    text-align: right;
    text-overflow: ellipsis;
+}
+
+table td, table th {
+   text-align: center!important;
 }
 
 .dl-horizontal dd {
@@ -473,6 +481,15 @@ table.compare th, table.compare td {
       left: auto!important;
    }
 
+@media only screen and (max-width: 800px) {
+   .interactive-map {
+      background: #e8f3f9;
+   }
+   .info-message {
+      display: none!important;
+   }
+}
+
 @media only screen and (max-width: 767px) {
   .pinned {
     width: auto!important;
@@ -482,23 +499,32 @@ table.compare th, table.compare td {
   }
 }
 
+@media only screen and (max-width: 600px) {
+   .map-sect {
+      height: 350px;
+   }
+   .interactive-map {
+      width: 875px;
+      height: 350px;
+   }
+   .odk-logo-foot, .foot-logo {
+     text-align: center;
+   }
+   .footer {
+     margin-bottom: 10px;
+   }
+}
+
 @media screen and (max-width: 480px) {
     .scrollup {
       bottom: 36px;
       right: 37px;
-    }
-    .odk-logo-foot, .foot-logo {
-      text-align: center;
     }
 
     .download-report, .print-report {
       width: 100%;
       display: block;
       margin-top: 10px;
-    }
-
-    .footer {
-      margin-bottom: 10px;
     }
 
     .table-responsive {
@@ -526,10 +552,8 @@ table.compare th, table.compare td {
    #index_openness_of_asset_declarations {
       display: none!important;
    }
-   .panel-body {
-      padding-right: 0px;
-      padding-left: 0px;
-   }
+
+
    .scope_asset_disclosure_list,
    .content_asset_declarations_list,
    .public_access_to_asset_declarations_list,
@@ -541,20 +565,45 @@ table.compare th, table.compare td {
    .openness_of_asset_declarations_list {
       display: block;
    }
+
    .nav>li {
       height: 50px;
    }
+
    .map-sect {
       height: 400px;
    }
+
    .interactive-map {
-      width: 821px;
+      width: 800px;
       height: 400px;
       background: #e8f3f9;
    }
+
    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-nav>li>a {
       padding-top: 14px!important;
       padding-bottom: 14px!important;
       height: 50px;
+   }
+}
+
+@media screen and (max-width: 360px) {
+   .map-sect {
+      height: 350px;
+   }
+
+   .interactive-map {
+      width: 760px;
+      height: 350px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .map-sect {
+      height: 350px;
+   }
+   .interactive-map {
+      width: 690px;
+      height: 350px;
    }
 }

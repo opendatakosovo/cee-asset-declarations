@@ -104,6 +104,11 @@ if ($(window).width() <= 480) {
   $('.vertical-center').css({'flex-flow': 'column'});
 }
 
+// Fixing index tables for tablets
+if ($(window).width() <= 800 && $(window).width() > 480) {
+   $('#index_scope_asset_disclosure, #index_content_asset_declarations, #index_verification_and_control_of_asset_information').wrap('<div class="table-responsive"><div>');
+}
+
 // Showing the message in smaller screen sizes
 if ($(window).height() <= 657) {
    // $('#res-sect').hide();
