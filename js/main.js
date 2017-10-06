@@ -100,6 +100,8 @@ if ($(window).width() > 480) {
 if ($(window).width() <= 480) {
   $('.table-title').remove();
   $('.table-sm-title').show();
+
+  $('.vertical-center').css({'flex-flow': 'column'});
 }
 
 // Showing the message in smaller screen sizes

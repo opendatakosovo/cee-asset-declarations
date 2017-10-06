@@ -13,6 +13,10 @@ body {
   margin-bottom: 60px;
 }
 
+p {
+  font-size: 16px;
+}
+
 #container {
    min-height:100%;
    position:relative;
@@ -109,6 +113,24 @@ g:hover {
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
   border: none;
+}
+
+.logo-container {
+  margin-top: 35px;
+}
+
+.vertical-center {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+  display: flex;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  /*flex-flow: column;*/
 }
 
 .interactive-map {
@@ -402,7 +424,7 @@ table.compare th, table.compare td {
 
 .partner-img {
    margin-top: 15px;
-   margin-right: 40px;
+   /*margin-right: 40px;*/
 }
 
 .pinned {
