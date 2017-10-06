@@ -1,3 +1,10 @@
+
+$('#myModal').modal('show');
+
+$('.index-link-modal').click(function() {
+   $('#myModal').modal('toggle');
+});
+
 // Showing the tooltip on hover of countries
 $('g').mouseover(function(e) {
    var countryName = $(this).data('country');

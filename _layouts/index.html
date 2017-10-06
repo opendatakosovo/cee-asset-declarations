@@ -902,9 +902,9 @@
 <img src="assets/up_map.png" class="scrollup" />
 
 <!-- Message alert -->
-<div class="alert alert-warning info-message">
-   Select a country on the map to begin!
-</div>
+<!-- <div class="alert alert-warning info-message"> -->
+   <!-- Select a country on the map to begin!
+</div> -->
 
 <div class="container-fluid res-sec">
    <!-- Country Name Container -->
@@ -1380,6 +1380,36 @@
             </div>
          </div>
       </div>
+   </div>
+
+   <!-- Trigger the modal with a button -->
+   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+   <!-- Modal -->
+   <div id="myModal" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title"><b>Welcome to CEE Asset Declarations Platform</b></h4>
+         </div>
+         <div class="modal-body text-justify">
+           <p>This is an assessment of efficiency and functioning of asset disclosure systems in 18 CEE countries. The data was collected through a survey conducted in the summer of 2017. Read more about the report in the <a href="{{site.baseurl}}/the-report">Report page</a>. In the <a href="{{site.baseurl}}/about">About page</a> you can find logos of all involved organizations, and list of research contributers</a></p>
+           <p>The data is separated in different sections and visualized in two ways:
+             <ul class="modal-list" style="font-size: 16px;">
+                <li><a class="index-link-modal" href="#">Each Country with its data</a></li>
+                <li><a href="{{site.baseurl}}/compare">Comparative analysis between countries</a></li>
+             </ul></p>
+           <p>
+             <b>Note</b>: Click in any country on the map to see its visualization data in sections.
+          </p>
+         </div>
+         <div class="modal-footer">
+           <button type="button" style="background-color:#625fd5; color: #fff;" class="btn" data-dismiss="modal">Explore</button>
+         </div>
+       </div>
+
+     </div>
    </div>
 
    <!-- Arrows for previous and next country -->

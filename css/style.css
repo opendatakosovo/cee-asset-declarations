@@ -521,6 +521,10 @@ table td, table th {
       right: 37px;
     }
 
+    .modal-list {
+      text-align: left;
+   }
+
     .download-report, .print-report {
       width: 100%;
       display: block;
