@@ -33,10 +33,6 @@ body {
    z-index: 99;
 }
 
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-  border: none;
-}
-
 .navbar-nav>li>a {
    padding-top: 25px !important;
    padding-bottom: 25px !important;
@@ -111,6 +107,10 @@ g:hover {
    width: 10em;
 }
 
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  border: none;
+}
+
 .interactive-map {
    position: absolute;
    top: 0px;
@@ -136,6 +136,7 @@ g:hover {
 .country-name-sect {
    height: 80px;
    background-color: #4fb0c6;
+   height: auto;
 }
 
 .country-name-sect .country-name {
@@ -404,6 +405,10 @@ table.compare th, table.compare td {
    margin-right: 40px;
 }
 
+.pinned {
+  width: auto;
+}
+
 .dl-horizontal dt {
    float: left;
    width: 160px;
@@ -434,6 +439,11 @@ table.compare th, table.compare td {
    display: none;
 }
 
+.download-btn {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
 /********* Media Queries *******/
 @media screen and (max-width: 1440px) {
    .interactive-map {
@@ -441,9 +451,28 @@ table.compare th, table.compare td {
       left: auto!important;
    }
 
+@media only screen and (max-width: 767px) {
+  .pinned {
+    width: auto!important;
+  }
+  div.table-wrapper div.scrollable {
+    margin-left: 37%;
+  }
+}
+
 @media screen and (max-width: 480px) {
+    .scrollup {
+      bottom: 36px;
+      right: 37px;
+    }
     .odk-logo-foot, .foot-logo {
       text-align: center;
+    }
+
+    .download-report, .print-report {
+      width: 100%;
+      display: block;
+      margin-top: 10px;
     }
 
     .footer {
