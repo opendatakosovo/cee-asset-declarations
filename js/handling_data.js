@@ -774,7 +774,7 @@ var jsonData = [{
       "ministers_members_parliament": "yes",
       "state_municipal_higher_menagement": "yes",
       "public_service_employees": "yes",
-      "judges_prosecutors_court_directors": "Only judges and prosecutors",
+      "judges_prosecutors_court_directors": "yes",
       "managers_of_state_owned_enterprises": "yes",
       "grant_receivers": "yes",
       "relatives_of_public_officials": "yes",
@@ -784,8 +784,8 @@ var jsonData = [{
       "income_private_public_sources": "yes",
       "real_estate": "yes",
       "movable_property": "yes",
-      "money": "yes",
-      "beneficial_ownership": "yes",
+      "money": "no",
+      "beneficial_ownership": "no",
       "management_of_NGOs": "no",
       "membership_in_organizations": "no",
       "subsidies": "no",
@@ -805,16 +805,16 @@ var jsonData = [{
       "random_ad_hoc_verification": "no",
       "verification_based_on_published_risk_assessment_methodology": "no",
       "verification_based_on_notifications_about_unjustified_wealth": "yes",
-      "verification_in_case_of_prosecution_of_the_given_person": "no",
+      "verification_in_case_of_prosecution_of_the_given_person": "yes",
       "regular_publication_of_reports_including_verification_results": "no"
       },
       "sanctions_for_non_declaration_and_incorrect_information": {
       "financial_fines": "no",
       "disciplinary_measures": "yes",
       "criminal_prosecution": "no",
-      "loss_of_mandate_or_public_office": "no"
+      "loss_of_mandate_or_public_office": "yes"
       },
-      "timeline_for_storing_of_asset_declaration_information": "Forever",
+      "timeline_for_storing_of_asset_declaration_information": "Kept online for 3 years for federal state service; varies for regional and municipal offices, with many applying the 3-year rule",
       "clarity_of_asset_disclosure_legislation": {
       "asset_declarations_framework_regulated_by_separate_law": "no",
       "asset_declaration_framework_split_into_multiple_laws": "yes"
