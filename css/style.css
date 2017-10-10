@@ -475,7 +475,7 @@ table td, table th {
 }
 
 span.annotation {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 /********* Media Queries *******/
