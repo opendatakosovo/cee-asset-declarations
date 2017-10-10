@@ -474,6 +474,10 @@ table td, table th {
   margin-bottom: 20px;
 }
 
+span.annotation {
+    font-size: 10px;
+}
+
 /********* Media Queries *******/
 @media screen and (max-width: 1440px) {
    .interactive-map {
