@@ -1,5 +1,39 @@
 
-$('#myModal').modal('show');
+var manageCookie = {
+    name: "disableWelcomingModal",
+    set: function (cookieValue, days) {
+        var d = new Date();
+        d.setTime(d.getTime() + (days*24*60*60*1000));
+        document.cookie = this.name + "=" + cookieValue + ";expires=" + d.toGMTString();
+    },
+    get: function (cookieName) {
+        var name = cookieName + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i]; 
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    },
+    check: function() {
+        var disableModal = this.get(this.name);
+        if (disableModal === "") {
+           $('#myModal').modal('show');
+           }
+        }
+};
+
+manageCookie.check();
+
+$('.btn-explore').click(function(){
+    manageCookie.set(true,365);
+});
 
 $('.index-link-modal').click(function() {
    $('#myModal').modal('toggle');
