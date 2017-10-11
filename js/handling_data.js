@@ -595,9 +595,9 @@ var jsonData = [{
       "money": "yes",
       "beneficial_ownership": "yes",
       "management_of_NGOs": "yes",
-      "membership_in_organizations": "no",
+      "membership_in_organizations": "yes",
       "subsidies": "yes",
-      "collectables": "no",
+      "collectables": "yes",
       "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
       },
       "public_access_to_asset_declarations": {
@@ -610,9 +610,9 @@ var jsonData = [{
       },
       "verification_and_control_of_asset_information": {
       "asset_declarations_verified": "yes",
-      "random_ad_hoc_verification": "no",
+      "random_ad_hoc_verification": "yes",
       "verification_based_on_published_risk_assessment_methodology": "no",
-      "verification_based_on_notifications_about_unjustified_wealth": "no",
+      "verification_based_on_notifications_about_unjustified_wealth": "yes",
       "verification_in_case_of_prosecution_of_the_given_person": "no",
       "regular_publication_of_reports_including_verification_results": "no"
       },
@@ -620,7 +620,7 @@ var jsonData = [{
       "financial_fines": "yes",
       "disciplinary_measures": "yes",
       "criminal_prosecution": "yes",
-      "loss_of_mandate_or_public_office": "no"
+      "loss_of_mandate_or_public_office": "yes"
       },
       "timeline_for_storing_of_asset_declaration_information": "Forever",
       "clarity_of_asset_disclosure_legislation": {
@@ -1109,7 +1109,7 @@ var jsonData = [{
       "management_of_NGOs": "yes",
       "membership_in_organizations": "no",
       "subsidies": "no",
-      "collectables": "no",
+      "collectables": "yes",
       "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
       },
       "public_access_to_asset_declarations": {
