@@ -130,7 +130,7 @@ g:hover {
   display:flex;
   justify-content:center;
   align-items: center;
-  /*flex-flow: column;*/
+  flex-flow: inherit !important;
 }
 
 .interactive-map {

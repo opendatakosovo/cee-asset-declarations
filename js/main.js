@@ -176,3 +176,14 @@ $('.previous').mouseover(function() {
 }).mouseout(function() {
    $('.previous-arrow').attr('src', 'assets/previous-arrow.png');
 });
+// Adding responsiveness for logo images
+(function($) {
+    var $window = $(window);
+    function resize() {
+        if ($window.width() < 992) {
+            return $('.logo-container img').addClass('img-responsive');
+        }
+        $('.logo-container img').removeClass('img-responsive');
+    }
+    $window.resize(resize).trigger('resize');
+})(jQuery);
