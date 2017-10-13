@@ -330,8 +330,7 @@ var jsonData = [{
       "managers_of_state_owned_enterprises": "yes",
       "grant_receivers": "no",
       "relatives_of_public_officials": "yes",
-      "other": ""
-      },
+      "other": ['The Business Ombudsman and his/her deputy', 'The head of the State Security Service of Georgia and his/her deputies, the heads and their deputies of structural divisions of the State Security Service of Georgia, chief administrations and administrations within these structural divisions, as well as persons equivalent to them', 'The head of the Revenue Service and his/her deputies and the head of the tax authority of the Revenue Service', 'The General Auditor, his/her deputy, members of the Presidium of the State Audit Office', 'The President of the National Bank of Georgia and members of the Board of the National Bank of Georgia', 'Members of the advisory body of the President of Georgia', 'Members of the High Council of Justice of Georgia', 'Members of the National Regulatory Commission of Georgia', 'The Chairperson of the Central Election Commission of Georgia, his/her deputy and the secretary of the Commission', 'The state trustees - the Governors and their deputies', 'The Personal Data Protection Inspector and his/her deputy']},
       "content_asset_declarations": {
       "income_private_public_sources": "yes",
       "real_estate": "yes",
@@ -341,7 +340,7 @@ var jsonData = [{
       "management_of_NGOs": "no",
       "membership_in_organizations": "no",
       "subsidies": "no",
-      "collectables": "no",
+      "collectables": "Yes (if its value exceeds 10,000 GEL (4,000USD)",
       "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
       },
       "public_access_to_asset_declarations": {
@@ -350,21 +349,21 @@ var jsonData = [{
       },
       "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
-      "political_independence_of_institutions_in_charge_of_asset_declaration": "no"
+      "political_independence_of_institutions_in_charge_of_asset_declaration": "Partially"
       },
       "verification_and_control_of_asset_information": {
-      "asset_declarations_verified": "To be introduced in 2018",
-      "random_ad_hoc_verification": "no",
+      "asset_declarations_verified": "yes",
+      "random_ad_hoc_verification": "yes",
       "verification_based_on_published_risk_assessment_methodology": "no",
-      "verification_based_on_notifications_about_unjustified_wealth": "no",
+      "verification_based_on_notifications_about_unjustified_wealth": "yes",
       "verification_in_case_of_prosecution_of_the_given_person": "no",
-      "regular_publication_of_reports_including_verification_results": "no"
+      "regular_publication_of_reports_including_verification_results": "yes"
       },
       "sanctions_for_non_declaration_and_incorrect_information": {
       "financial_fines": "yes",
-      "disciplinary_measures": "no",
-      "criminal_prosecution": "no",
-      "loss_of_mandate_or_public_office": "no"
+      "disciplinary_measures": "yes",
+      "criminal_prosecution": "yes",
+      "loss_of_mandate_or_public_office": "yes"
       },
       "timeline_for_storing_of_asset_declaration_information": "Forever",
       "clarity_of_asset_disclosure_legislation": {
@@ -1229,6 +1228,7 @@ function inArray(country, array){
   }
 }
 
+
 // Rendering rows for comparing tables
 $.each(jsonData, function(k, v) {
    var countryName = '<td id="country_name">'+v.name+'</td>';
@@ -1239,8 +1239,17 @@ $.each(jsonData, function(k, v) {
       }
    }
 
+   if(v.name === "Georgia"){
+      var li = '';
+      $.each( v.scope_asset_disclosure.other, function( index, value ) {
+            li += '<li>' + value + '</li>';
+      });      
+      v.scope_asset_disclosure.other  = '<ul class="georgia-other">' + li + '</ul>';
+   }
+      
+
    $(".scope_asset_disclosure tbody").append(
-      '<tr>'+countryName+'<td id="ministers_members_parliament">'+v.scope_asset_disclosure.ministers_members_parliament+'</td><td id="state_municipal_higher_menagement">'+v.scope_asset_disclosure.state_municipal_higher_menagement+'</td><td id="public_service_employees">'+v.scope_asset_disclosure.public_service_employees+'</td><td id="judges_prosecutors_court_directors">'+v.scope_asset_disclosure.judges_prosecutors_court_directors+'</td><td id="managers_of_state_owned_enterprises">'+v.scope_asset_disclosure.managers_of_state_owned_enterprises+'</td><td id="grant_receivers">'+v.scope_asset_disclosure.grant_receivers+'</td><td id="relatives_of_public_officials">'+v.scope_asset_disclosure.relatives_of_public_officials+'</td><td id="other">'+v.scope_asset_disclosure.other+'</td></tr>');
+      '<tr>'+countryName+'<td id="ministers_members_parliament">'+v.scope_asset_disclosure.ministers_members_parliament+'</td><td id="state_municipal_higher_menagement">'+v.scope_asset_disclosure.state_municipal_higher_menagement+'</td><td id="public_service_employees">'+v.scope_asset_disclosure.public_service_employees+'</td><td id="judges_prosecutors_court_directors">'+v.scope_asset_disclosure.judges_prosecutors_court_directors+'</td><td id="managers_of_state_owned_enterprises">'+v.scope_asset_disclosure.managers_of_state_owned_enterprises+'</td><td id="grant_receivers">'+v.scope_asset_disclosure.grant_receivers+'</td><td id="relatives_of_public_officials">'+v.scope_asset_disclosure.relatives_of_public_officials+'</td><td id="other ">'+v.scope_asset_disclosure.other+'</td></tr>');
 
       $('.content_asset_declarations tbody').append('<tr>'+countryName+'<td id="income_private_public_sources">'+v.content_asset_declarations.income_private_public_sources+'</td><td id="real_estate">'+v.content_asset_declarations.real_estate+'</td><td id="movable_property">'+v.content_asset_declarations.movable_property+'</td><td id="money">'+v.content_asset_declarations.money+'</td><td id="beneficial_ownership">'+v.content_asset_declarations.beneficial_ownership+'</td><td id="management_of_NGOs">'+v.content_asset_declarations.management_of_NGOs+'</td><td id="membership_in_organizations">'+v.content_asset_declarations.membership_in_organizations+'</td><td id="subsidies">'+v.content_asset_declarations.subsidies+'</td><td id="collectables">'+v.content_asset_declarations.collectables+'</td><td id="allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly">'+v.content_asset_declarations.allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly+'</td></tr>')
 
@@ -1272,3 +1281,5 @@ $.each(tables, function(k, v) {
       }
    });
 });
+
+

@@ -1,0 +1,27 @@
+{% include header.html %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-8 col-md-push-3 col-xs-push-2 post-md" >
+            <div clas>
+            <p class="p-title resource-title">PROJECT RESOURCES</p>
+            </div>
+            {% for post in site.posts %}
+            <div class="resource-post"> 
+                <div class="post-title"> 
+                    <a target="_blank" href="{{ site.baseurl }}{{ post.file-path }}"> <p> {{ post.title }} </p></a> 
+                </div>
+                <div> <b> Publisher</b>: {{ post.publisher }} </div>
+                <div> <b> Published on</b>: {{ post.published-on }} </div>
+                <div clas="description">  <b> Description</b>: <span class="post-content more"> {{ post.excerpt | remove: '<p>' | remove: '</p>'}} </span></div>
+
+                <div class="post-download"> 
+                    <a target="_blank" href="{{ site.baseurl }}{{ post.file-path }}"> DOWNLOAD </a>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}   
+        </div>
+    </div>
+</div>
+{% include footer.html %}

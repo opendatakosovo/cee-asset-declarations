@@ -1,4 +1,4 @@
-
+// Set cookies for welcoming modal
 var manageCookie = {
     name: "disableWelcomingModal",
     set: function (cookieValue, days) {
@@ -187,3 +187,39 @@ $('.previous').mouseover(function() {
     }
     $window.resize(resize).trigger('resize');
 })(jQuery);
+
+// Resources page: read more/less
+$(document).ready(function() {
+  var showChar = 300;
+  var collapsedText = "...";
+  var moreText = "READ MORE";
+  var lessText = "READ LESS";
+  $('.more').each(function() {
+    var content = $(this).html();
+    if(content.length > showChar) {
+
+      var c = content.substr(0, showChar);
+      var h = content.substr(showChar-1, content.length - showChar);
+
+      var html1 = c + '<span>'+collapsedText+'</span><span class="more-content"><span class="h-text">' + h + '</span><a href="" class="more-link">'+moreText+'</a></span>';
+
+      $(this).html(html1);
+    }
+
+  });
+
+  $(".more-link").click(function(){
+    if($(this).hasClass("less")) {
+      $(this).removeClass("less");
+      $(this).html(moreText);
+    } else {
+      $(this).addClass("less");
+      $(this).html(lessText);
+    }
+    $(this).parent().prev().toggle();
+    $(this).prev().toggle();
+    return false;
+  });
+});
+
+

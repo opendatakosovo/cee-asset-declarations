@@ -378,7 +378,9 @@ table.compare th, table.compare td {
    text-align: center;
    vertical-align: middle !important;
 }
-
+.georgia-other{
+  text-align: justify;
+}
 /********* The report Page *********/
 .the-report p {
   text-align: justify;
@@ -484,14 +486,18 @@ span.annotation {
       right: 0px!important;
       left: auto!important;
    }
-
+@media screen and (max-width: 992px){
+  .previous-arrow, .next-arrow {
+      width: 45px;
+    }
+}
 @media only screen and (max-width: 800px) {
    .interactive-map {
       background: #e8f3f9;
    }
    .info-message {
       display: none!important;
-   }
+   }   
 }
 
 @media only screen and (max-width: 767px) {
@@ -501,6 +507,15 @@ span.annotation {
   div.table-wrapper div.scrollable {
     margin-left: 37%;
   }
+  .previous-div {
+      text-align: left !important;
+   }
+   .next-div{
+    text-align: right !important; 
+   }
+   .previous-arrow, .next-arrow {
+      width: 59px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -539,10 +554,6 @@ span.annotation {
       border: none;
     }
 
-   .previous, .next {
-      text-align: center;
-      font-size: 15px !important;
-   }
    .previous-arrow, .next-arrow {
       width: 45px;
     }
@@ -597,7 +608,28 @@ span.annotation {
       height: 50px;
    }
 }
+/*resource page*/
 
+.resource-title{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.post-title, .post-download{
+  padding-top:10px;
+  padding-bottom: 10px; 
+}
+.resource-post{
+  text-align: justify;
+}
+.resource-title, .post-title a, .post-download a, .post-title a:hover, .post-download a:hover, .more-link, .more-link:hover{
+  font-weight: bold;
+  color: #625fd5;
+  text-decoration: none !important;
+
+}
+.h-text{
+  display: none;
+}
 @media screen and (max-width: 360px) {
    .map-sect {
       height: 350px;
@@ -619,13 +651,12 @@ span.annotation {
    }
 }
 @media only screen and (max-width: 480px) {
-       h1 { font-size: 20px !important; }
-       h2 { font-size: 19px !important; }
-       h3 { font-size: 18px !important; }
-       h4 { font-size: 17px !important; }
-       .the-report p { font-size: 16px !important}
-
-       .modal-content {
-          border-radius: 0;
-        }
-     }
+  h1 { font-size: 20px !important; }
+  h2 { font-size: 19px !important; }
+  h3 { font-size: 18px !important; }
+  h4 { font-size: 17px !important; }
+  .the-report p { font-size: 16px !important; }
+}
+@media only screen and (max-width: 782px) {
+  .modal-content { border-radius: 0; }
+}
