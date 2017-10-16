@@ -189,37 +189,21 @@ $('.previous').mouseover(function() {
 })(jQuery);
 
 // Resources page: read more/less
-$(document).ready(function() {
-  var showChar = 300;
-  var collapsedText = "...";
+
   var moreText = "READ MORE";
   var lessText = "READ LESS";
-  $('.more').each(function() {
-    var content = $(this).html();
-    if(content.length > showChar) {
 
-      var c = content.substr(0, showChar);
-      var h = content.substr(showChar-1, content.length - showChar);
-
-      var html1 = c + '<span>'+collapsedText+'</span><span class="more-content"><span class="h-text">' + h + '</span><a href="" class="more-link">'+moreText+'</a></span>';
-
-      $(this).html(html1);
-    }
-
-  });
-
-  $(".more-link").click(function(){
+  $(".more-link").click(function () {
     if($(this).hasClass("less")) {
       $(this).removeClass("less");
-      $(this).html(moreText);
-    } else {
-      $(this).addClass("less");
+      $(this).parent().siblings(".post-excerpt").hide();
+      $(this).parent().siblings(".post-content").show();
       $(this).html(lessText);
+    } else {
+      $(this).parent().siblings(".post-excerpt").show();
+      $(this).parent().siblings(".post-content").hide();
+      $(this).addClass("less");
+      $(this).html(moreText);
     }
-    $(this).parent().prev().toggle();
-    $(this).prev().toggle();
     return false;
-  });
-});
-
-
+ });
