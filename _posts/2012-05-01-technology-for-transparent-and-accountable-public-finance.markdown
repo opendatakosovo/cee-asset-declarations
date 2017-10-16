@@ -7,12 +7,9 @@ categories: resorces
 file-path: "/static/resources/Technology_for_Transparent_and_Accountable_Public_Finance_Global_Initiative_for_Fiscal_Transparency_summary.pdf"
 summary-path: "/static/resources/summaries/Technology_for_Transparent_and_Accountable_Public_Finance_Global_Initiative_for_Fiscal_Transparency_summary.docx"
 ---
-In this resource we can find details about seven Asian countries (Afghanistan, Pakistan, Tajikistan, Kyrgyz Republic, India, Bangladesh and Nepal). It consists of seven sections: 
-- Coverage of asset declaration rules (it gives an overview on how the asset declaration is implemented in each of these countries)
-What should be declared? 
-- Frequency of declaration
-- Monitoring and enforcment (includes the responsible agency and verification of asset declarations)
-- Sanctions for non-compliance
-- Public disclosure policy
-- Overview of implementation and challenges
-This resource is not that useful for our work, since the challenges faced by these countries are mostly overcome by CEE or SEE countries. 
+The report was first published in 2012. by Open Knowledge Foundation. It focuses on projects that are using technology to imrpve fiscal transparency of their countries. There are three types of projects who do the following: 
+- Looking at where the money comes from
+- Monitoring where the money goes
+- Projects which focus on 'invisible money' (state or semi-state owned enterprizes etc.)
+The report also examines 4 data portals from different countries (UK, Canada, Republic of Corea and Brazil). It also features CSO feedback on data portals, which is probably the most useful for us in terms of for what kind of data formats should we advocate for when it comes to asset declarations.
+The problem with this report, when it comes to asset declarations is that id deals with budget transparency, so there is not a lot for us to take out from it, other than the technological aspects of publishing the data. 
