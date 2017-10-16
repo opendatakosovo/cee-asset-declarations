@@ -486,6 +486,7 @@ span.annotation {
       right: 0px!important;
       left: auto!important;
    }
+ }
 @media screen and (max-width: 992px){
   .previous-arrow, .next-arrow {
       width: 45px;
@@ -607,6 +608,12 @@ span.annotation {
       padding-bottom: 14px!important;
       height: 50px;
    }
+   .vertical-center{
+      display: inherit !important;
+    }
+    .logo-container{
+          min-height: 70px !important;
+    }
 }
 /*resource page*/
 
