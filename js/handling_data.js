@@ -1104,12 +1104,12 @@ var jsonData = [{
       "real_estate": "yes",
       "movable_property": "yes",
       "money": "yes",
-      "beneficial_ownership": "Does not collect information on gifts",
+      "beneficial_ownership": "Gifts (both cash and inkind) are declared if the price/amount are bigger then 5 subsistence minimums (in 2017 it is 5*1600=8000 UAH, or ~270 EUR)",
       "management_of_NGOs": "yes",
-      "membership_in_organizations": "no",
+      "membership_in_organizations": "Is declared, if any position (job) is ocuupied (both paid or unpaid)",
       "subsidies": "no",
       "collectables": "yes",
-      "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
+      "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "Is declared, if it is a salary"
       },
       "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "Declarations of secret services not available, and chiefs of some military, police and prosecution departments can be kept undisclosed.",
@@ -1123,17 +1123,17 @@ var jsonData = [{
       "asset_declarations_verified": "yes",
       "random_ad_hoc_verification": "no",
       "verification_based_on_published_risk_assessment_methodology": "yes",
-      "verification_based_on_notifications_about_unjustified_wealth": "no",
+      "verification_based_on_notifications_about_unjustified_wealth": "Citizens can appeal to National Agency on Preventing Corruption (NAPC) according to the general law on appeal. NAPC should take to the consideration provided information and inform about motivated decision to start or not to start the investigation.",
       "verification_in_case_of_prosecution_of_the_given_person": "no",
-      "regular_publication_of_reports_including_verification_results": "no"
+      "regular_publication_of_reports_including_verification_results": "Are published on  web-site in the section “Decisions of the NAPC”. Also are available if request for information has been sent."
       },
       "sanctions_for_non_declaration_and_incorrect_information": {
       "financial_fines": "yes",
       "disciplinary_measures": "yes",
       "criminal_prosecution": "yes",
-      "loss_of_mandate_or_public_office": "no"
+      "loss_of_mandate_or_public_office": "It can be as a secondary result. For example, if there is a court decision on criminal case (also based on corruption law) such person can lose his/her mandate."
       },
-      "timeline_for_storing_of_asset_declaration_information": "Not specified",
+      "timeline_for_storing_of_asset_declaration_information": "The documents submitted by any public person to the Register should be kept in the Register during the whole period when this person occupies any public position is state or local government, as well as within five years after retire, except last declaration, which is kept in the registry without time limitations.",
       "clarity_of_asset_disclosure_legislation": {
       "asset_declarations_framework_regulated_by_separate_law": "yes",
       "asset_declaration_framework_split_into_multiple_laws": "no"
