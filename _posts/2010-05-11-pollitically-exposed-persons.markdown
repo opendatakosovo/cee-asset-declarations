@@ -5,22 +5,13 @@ publisher: The International Bank for Reconstruction and Development / The World
 published-on: 2010
 categories: resorces
 file-path: "/static/resources/Politically_Exposed_Persons_WB manual.pdf"
+summary-path: "/static/resources/summaries/Politically_Exposed_Persons_WB manual_summary.docx"
 ---
-This paper is designed as a policy note for banks and regulatory authorities, as well as for use by the
-standard setters, policy makers, FIUs, and other public authorities with a role in the implementation
-of PEP standards. Policy makers and standard setters may use the Recommendations and Good
-Practices to inform their efforts in ensuring that effective laws and standards are adopted. The paper
-is focused on the banking sector, not on other financial and nonfinancial sectors vulnerable to the
-laundering of corrupt funds.
+This paper is designed as a policy note for banks and regulatory authorities, as well as for use by the standard setters, policy makers, FIUs, and other public authorities with a role in the implementation of PEP standards. Policy makers and standard setters may use the Recommendations and Good Practices to inform their efforts in ensuring that effective laws and standards are adopted. The paper is focused on the banking sector, not on other financial and nonfinancial sectors vulnerable to the laundering of corrupt funds.
 The paper is organized into four major parts:
-Part 1 sets out some of the main observations and trends in PEPs compliance and an analysis of the
-principal reasons for poor compliance and overall ineffectiveness of systems to detect and monitor
-PEPs. Part 2 focuses on the implementation of PEP measures by regulatory authorities and banks.
-Part 3 reviews the roles of the public authorities that are primarily involved in preventing abuse by
-corrupt PEPs. These authorities include the regulatory authority, which is responsible for providing
-guidance to banks and enforcing compliance, as well as the FIU, which has a role in the context of
-suspicious transaction reports (STRs) on PEPs. Finally, Part 4 considers some of the cross-cutting
-issues—national cooperation, training, and resources—that must be addressed by all stakeholders.
+- Part 1 sets out some of the main observations and trends in PEPs compliance and an analysis of the principal reasons for poor compliance and overall ineffectiveness of systems to detect and monitor PEPs. 
+- Part 2 focuses on the implementation of PEP measures by regulatory authorities and banks.
+- Part 3 reviews the roles of the public authorities that are primarily involved in preventing abuse by corrupt PEPs. These authorities include the regulatory authority, which is responsible for providing guidance to banks and enforcing compliance, as well as the FIU, which has a role in the context of suspicious transaction reports (STRs) on PEPs. Finally, Part 4 considers some of the cross-cutting issues—national cooperation, training, and resources—that must be addressed by all stakeholders.
 General problem is:
 - Low level of compliance with international standards due to lack of enforcable legal or
 regulatory framework

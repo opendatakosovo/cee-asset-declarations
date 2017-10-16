@@ -5,32 +5,10 @@ publisher: The International Bank for Reconstruction and Development / The World
 published-on: 2013
 categories: resorces
 file-path: "/static/resources/Income_and_Asset_Disclosure_Case_Study_Illustrations.pdf"
+summary-path: "/static/resources/summaries/Income_and_Asset_Disclosure_Case_Study_Illustrations_summary.docx"
 ---
-This study analyzes the situation in 11 countries (Argentina, Croatia, Guatemala, Hong
-Kong, Indonesia, Jordan, Kyrgyz Republic, Mongolia, Rwanda, Slovenia and United States). It aims to
-give both the CSOs and the public officials an idea on how are things are being done in other
-countries. The case studies are structured as follows: a brief overview of the system; a background
-section describing the relevant legislation (this includes a profile of the in-law provisions that define
-which officials are subject to the disclosure requirement, the content of declarations, filing
-frequency, submission compliance and content verification, sanctions, public access, and
-investigations); the mandate and structure of the implementing agency; and the resources and
-procedures of the system (this includes facilities and information technology resources, human
-resources, budget, regulatory function, and practices related to managing submission compliance,
-content verification, investigations, interagency collaboration, public access, reporting, and
-outreach). What is important to emhasize when it comes to this publication is the fact that it does
-not try to answer the question of what works best, since it is many times emphasized that the
-success of the system mostly relies on its elements in the government, and different approaches and
-expectations are suited for each country.
+This study analyzes the situation in 11 countries (Argentina, Croatia, Guatemala, Hong Kong, Indonesia, Jordan, Kyrgyz Republic, Mongolia, Rwanda, Slovenia and United States). It aims to give both the CSOs and the public officials an idea on how are things are being done in other countries. The case studies are structured as follows: a brief overview of the system; a background section describing the relevant legislation (this includes a profile of the in-law provisions that define which officials are subject to the disclosure requirement, the content of declarations, filing frequency, submission compliance and content verification, sanctions, public access, and investigations); the mandate and structure of the implementing agency; and the resources and procedures of the system (this includes facilities and information technology resources, human resources, budget, regulatory function, and practices related to managing submission compliance, content verification, investigations, interagency collaboration, public access, reporting, and outreach). What is important to emhasize when it comes to this publication is the fact that it does not try to answer the question of what works best, since it is many times emphasized that the success of the system mostly relies on its elements in the government, and different approaches and expectations are suited for each country.
 However, there are a few takeavays which are important, as stated in the publication and those are:
-- Understanding the context. The effectiveness of a financial disclosure system is, to a large
-extent, dependent on elements of the local context (including elements of the institutional,
-cultural, and political environment in which it operates). An assessment of these factors
-prior to designing or upgrading an IAD system is important to ensure a good fit between
-the agency’s role, functions, and procedures and the local environment. The key principle
-here is that context matters.
+- Understanding the context. The effectiveness of a financial disclosure system is, to a large extent, dependent on elements of the local context (including elements of the institutional, cultural, and political environment in which it operates). An assessment of these factors prior to designing or upgrading an IAD system is important to ensure a good fit between the agency’s role, functions, and procedures and the local environment. The key principle here is that context matters.
 - Building capacity incrementally. Although there is no single or standardized approach that
-will work in every context, systems that begin with too many requirements—such as too
-large a pool of filers—and with inadequate institutional capacities to manage and enforce
-compliance are more likely to fail than those that start with modest, manageable objectives.
-Building capacity incrementally can be achieved by, for example, gradually
-expanding the submission requirement
+will work in every context, systems that begin with too many requirements—such as too large a pool of filers—and with inadequate institutional capacities to manage and enforce compliance are more likely to fail than those that start with modest, manageable objectives. Building capacity incrementally can be achieved by, for example, gradually expanding the submission requirement

@@ -5,6 +5,7 @@ publisher: ELLA Network (Evidence and Lessons from Latin America)
 published-on: 2012
 categories: resorces
 file-path: "/static/resources/Fighting_Corruptio_By_Improving_Transparency_And_Access_To_Information.pdf"
+summary-path: "/static/resources/summaries/Fighting_Corruptio_By_Improving_Transparency_And_Access_To_Information_summary.docx"
 ---
 Using Information and Communication Technologies (ICTs), in the last decades countries such as Argentina, Brazil, Chile, Guatemala, Mexico, Panama and Paraguay have designed and created electronic platforms that make information about procurement and government o!cials’ personal assets public. These electronic platforms have guaranteed an effective and transparent flow of public information, thereby empowering citizens to identify and demand action against corruption and allowing oversight agencies to detect and sanction public officials engaging in corruption. Latin American countries such as Argentina with Ddjjonline or Mexico with Declaranet have designed and implemented electronic platforms to disclose public officials’ personal assets. These platforms allow public servants to submit electronically the yearly declarations of personal assets and income that by law they are mandated to. 
 By gathering all public officials’ declarations electronically in a single database, these platforms facilitate the review and analysis of information to identify, investigate, and impose sanctions on public o!cers engaging in corrupt practices like bribery or illicit enrichment, or demonstrating conflict of interest.

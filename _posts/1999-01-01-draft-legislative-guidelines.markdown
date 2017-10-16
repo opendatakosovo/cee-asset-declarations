@@ -5,6 +5,7 @@ publisher:  OAS - The Organization of American States
 published-on:   
 categories: resorces
 file-path: "/static/resources/Draft_Legislative_Guideline_Basic_Elements_on_the_Registration_of_Inc_me_Assets_and_Liabilities.doc"
+summary-path: "/static/resources/summaries/Draft_Legislative_Guideline_Basic_Elements_on_the_Registration_of_Inc_me_Assets_and_Liabilities_summary.docx"
 ---
 This document is a template for writing laws on asset declaration. The template itself is divided into 9 major areas:
 1. Scope of legislation

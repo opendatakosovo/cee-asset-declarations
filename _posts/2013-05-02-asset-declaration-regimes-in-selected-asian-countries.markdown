@@ -5,6 +5,7 @@ publisher: U4 Anti-Corruption Resource Centre
 published-on: 2013
 categories: resorces
 file-path: "/static/resources/Asset_declaration_regimes_in_selected_Asian_countries.pdf"
+summary-path: "/static/resources/summaries/Asset_declaration_regimes_in_selected_Asian_countries_summary.docx"
 ---
 In this resource we can find details about seven Asian countries (Afghanistan, Pakistan, Tajikistan,
 Kyrgyz Republic, India, Bangladesh and Nepal). It consists of seven sections:

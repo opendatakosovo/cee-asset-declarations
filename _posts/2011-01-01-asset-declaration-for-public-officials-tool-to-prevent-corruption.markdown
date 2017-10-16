@@ -5,6 +5,7 @@ publisher: OECD
 published-on: 2011
 categories: resorces
 file-path: "/static/resources/Asset_Declarations_for_Public_Officials_A_Tool_to_prevent_corruption_OECD.pdf"
+summary-path: "/static/resources/summaries/Asset_Declarations_for_Public_Officials_A_Tool_to_prevent_corruption_OECD_summary.docx"
 ---
 This study is divided in three parts. The first part deals with policy principles and
 reccomendations for public asset declarations. The second part analyzes existing asset declaration

@@ -4,7 +4,8 @@ title: "Technology for Transparent and Accountable Public Finance (TTAPF)"
 publisher: Open Knowledge Foundation
 published-on: 2012
 categories: resorces
-file-path: "/static/resources/Technology_for_Transparent_and_Accountable_Public_Finance_Global_Initiative_for_Fiscal_Transparency_Report.pdf"
+file-path: "/static/resources/Technology_for_Transparent_and_Accountable_Public_Finance_Global_Initiative_for_Fiscal_Transparency_summary.pdf"
+summary-path: "/static/resources/summaries/Technology_for_Transparent_and_Accountable_Public_Finance_Global_Initiative_for_Fiscal_Transparency_summary.docx"
 ---
 In this resource we can find details about seven Asian countries (Afghanistan, Pakistan, Tajikistan, Kyrgyz Republic, India, Bangladesh and Nepal). It consists of seven sections: 
 - Coverage of asset declaration rules (it gives an overview on how the asset declaration is implemented in each of these countries)

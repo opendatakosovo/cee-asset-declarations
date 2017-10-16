@@ -5,6 +5,7 @@ publisher: Ashoka Change Makers
 published-on: 2012
 categories: resorces
 file-path: "/static/resources/G20_Principles_for_financial_and_asset_disclosure_systems.pdf"
+summary-path: "/static/resources/summaries/G20_Principles_for_financial_and_asset_disclosure_systems_summary.docx"
 ---
 This document just states the principles that the G20 countries agreed upon when it comes to asset
 disclosure, and they are as follows:

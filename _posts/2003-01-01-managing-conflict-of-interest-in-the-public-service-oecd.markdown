@@ -5,6 +5,7 @@ publisher: Organisation for Economic Co-operation and Development
 published-on: 2003
 categories: resorces
 file-path: "/static/resources/Managing_Conflict_of_Interest_in_Public_Sphere.pdf"
+summary-path: "/static/resources/summaries/Managing_Conflict_of_Interest_in_Public_Sphere_summary.docx"
 ---
 OECD guidelines are as follows: 
 - Provide a practical framework of reference for reviewing existing policy solutions and modernising mechanisms in line with good practices in OECD countries.
