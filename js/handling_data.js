@@ -775,7 +775,7 @@ var jsonData = [{
       "public_service_employees": "yes",
       "judges_prosecutors_court_directors": "yes",
       "managers_of_state_owned_enterprises": "yes",
-      "grant_receivers": "yes",
+      "grant_receivers": "no",
       "relatives_of_public_officials": "yes",
       "other": ""
       },
