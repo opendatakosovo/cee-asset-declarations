@@ -341,7 +341,7 @@ var jsonData = [{
       "membership_in_organizations": "no",
       "subsidies": "no",
       "collectables": "Yes (if its value exceeds 10,000 GEL (4,000USD)",
-      "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
+      "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "Is declared, if it is a salary"
       },
       "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "yes",
