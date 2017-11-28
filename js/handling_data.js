@@ -865,7 +865,7 @@ var jsonData = [{
       },
       "verification_and_control_of_asset_information": {
       "asset_declarations_verified": "yes",
-      "random_ad_hoc_verification": "no",
+      "random_ad_hoc_verification": "yes",
       "verification_based_on_published_risk_assessment_methodology": "no",
       "verification_based_on_notifications_about_unjustified_wealth": "no",
       "verification_in_case_of_prosecution_of_the_given_person": "no",
