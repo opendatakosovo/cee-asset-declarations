@@ -131,11 +131,11 @@ var jsonData = [{
       "name": "Bosnia and Herzegovina",
       "code": "BA",
       "scope_asset_disclosure": {
-      "ministers_members_parliament": "yes",
-      "state_municipal_higher_menagement": "Only city mayors and municipal council members",
-      "public_service_employees": "yes",
+      "ministers_members_parliament": "Only MPs",
+      "state_municipal_higher_menagement": "Members of the Presidency of BiH, President of Republika Srpska, city mayors and municipal council members",
+      "public_service_employees": "no",
       "judges_prosecutors_court_directors": "yes",
-      "managers_of_state_owned_enterprises": "yes",
+      "managers_of_state_owned_enterprises": "no",
       "grant_receivers": "no",
       "relatives_of_public_officials": "Only names",
       "other": ""
@@ -145,7 +145,7 @@ var jsonData = [{
       "real_estate": "yes",
       "movable_property": "yes",
       "money": "yes",
-      "beneficial_ownership": "Does not collect information on gifts",
+      "beneficial_ownership": "no",
       "management_of_NGOs": "no",
       "membership_in_organizations": "no",
       "subsidies": "no",
@@ -169,7 +169,7 @@ var jsonData = [{
       "regular_publication_of_reports_including_verification_results": "no"
       },
       "sanctions_for_non_declaration_and_incorrect_information": {
-      "financial_fines": "no",
+      "financial_fines": "yes",
       "disciplinary_measures": "no",
       "criminal_prosecution": "no",
       "loss_of_mandate_or_public_office": "no"
