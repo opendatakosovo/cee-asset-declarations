@@ -667,3 +667,8 @@ span.annotation {
 @media only screen and (max-width: 782px) {
   .modal-content { border-radius: 0; }
 }
+
+/* infographics */
+.infographic img {
+    width: 100%;
+}
