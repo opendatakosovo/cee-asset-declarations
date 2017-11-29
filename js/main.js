@@ -90,7 +90,7 @@ $(".collapse").each(function() {
 });
 
 // Height of footer based on pages
-if(window.location.pathname == '/cee-asset-declarations/' || window.location.pathname == '/cee-asset-declarations/the-report' || window.location.pathname == '/cee-asset-declarations/compare' || window.location.pathname == '/cee-asset-declarations/about') {
+if(window.location.pathname == '/cee-asset-declarations/' || window.location.pathname == '/cee-asset-declarations/the-report' || window.location.pathname == '/cee-asset-declarations/compare' || window.location.pathname == '/cee-asset-declarations/about' || window.location.pathname == '/cee-asset-declarations/infographics') {
   // Footer
   $('.footer').css({'height': '28px'});
 }
