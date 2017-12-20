@@ -597,7 +597,7 @@ var jsonData = [{
       "management_of_NGOs": "yes",
       "membership_in_organizations": "yes",
       "subsidies": "yes",
-      "collectables": "yes",
+      "collectables": "yes, if value exceeds 20 average wages ~ 6,500 USD",
       "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
     },
     "public_access_to_asset_declarations": {
