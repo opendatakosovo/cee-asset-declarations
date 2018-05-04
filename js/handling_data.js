@@ -60,7 +60,8 @@ var jsonData = [{
     "published": "yes",
     "scans_of_filled_forms": "yes",
     "copiable_documents_word_pdf": "no",
-    "html_format": "no"
+    "html_format": "no",
+      "machine_readable": "no"
   }
 },
   {
@@ -124,7 +125,8 @@ var jsonData = [{
       "published": "no",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -188,7 +190,8 @@ var jsonData = [{
       "published": "no",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -252,7 +255,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "yes",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -316,7 +320,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "yes",
-      "html_format": "yes"
+      "html_format": "yes",
+        "machine_readable": "no"
     }
   },
   {
@@ -380,7 +385,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "yes",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -444,7 +450,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -508,7 +515,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "yes",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -572,7 +580,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "no",
-      "html_format": "yes"
+      "html_format": "yes",
+        "machine_readable": "no"
     }
   },
     {
@@ -636,7 +645,8 @@ var jsonData = [{
             "published": "yes",
             "scans_of_filled_forms": "no, need to ask by FOIA",
             "copiable_documents_word_pdf": "no",
-            "html_format": "yes"
+            "html_format": "yes",
+            "machine_readable": "no"
         }
     },
   {
@@ -700,7 +710,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -764,7 +775,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -828,7 +840,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -892,7 +905,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "yes",
-      "html_format": "yes"
+      "html_format": "yes",
+        "machine_readable": "no"
     }
   },
   {
@@ -956,7 +970,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "yes",
-      "html_format": "yes"
+      "html_format": "yes",
+        "machine_readable": "no"
     }
   },
   {
@@ -1020,7 +1035,8 @@ var jsonData = [{
       "published": "yes",
       "scans_of_filled_forms": "yes",
       "copiable_documents_word_pdf": "no",
-      "html_format": "yes"
+      "html_format": "yes",
+        "machine_readable": "no"
     }
   },
   {
@@ -1084,7 +1100,8 @@ var jsonData = [{
       "published": "no",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -1148,7 +1165,8 @@ var jsonData = [{
       "published": "no",
       "scans_of_filled_forms": "no",
       "copiable_documents_word_pdf": "no",
-      "html_format": "no"
+      "html_format": "no",
+        "machine_readable": "no"
     }
   },
   {
@@ -1211,8 +1229,9 @@ var jsonData = [{
     "openness_of_asset_declarations": {
       "published": "yes",
       "scans_of_filled_forms": "no",
-      "copiable_documents_word_pdf": "no",
-      "html_format": "Downloadable readable PDFs, JSON (API)"
+      "copiable_documents_word_pdf": "yes",
+      "html_format": "yes",
+        "machine_readable": "JSON API"
     }
   }];
 
@@ -1332,7 +1351,7 @@ $.each(jsonData, function (k, v) {
 
   $('.means_of_submission_of_asset_declarations tbody').append('<tr>' + countryName + '<td id="filled_by_hand">' + v.means_of_submission_of_asset_declarations.filled_by_hand + '</td><td id="via_central_online_system">' + v.means_of_submission_of_asset_declarations.via_central_online_system + '</td><td id="forms_filled_on_computer">' + v.means_of_submission_of_asset_declarations.forms_filled_on_computer + '</td>');
 
-  $('.openness_of_asset_declarations tbody').append('<tr>' + countryName + '<td id="published">' + v.openness_of_asset_declarations.published + '</td><td id="scans_of_filled_forms">' + v.openness_of_asset_declarations.scans_of_filled_forms + '</td><td id="copiable_documents_word_pdf">' + v.openness_of_asset_declarations.copiable_documents_word_pdf + '</td><td id="html_format">' + v.openness_of_asset_declarations.html_format + '</td>');
+  $('.openness_of_asset_declarations tbody').append('<tr>' + countryName + '<td id="published">' + v.openness_of_asset_declarations.published + '</td><td id="scans_of_filled_forms">' + v.openness_of_asset_declarations.scans_of_filled_forms + '</td><td id="copiable_documents_word_pdf">' + v.openness_of_asset_declarations.copiable_documents_word_pdf + '</td><td id="html_format">' + v.openness_of_asset_declarations.html_format + '</td><td id="machine_readable">' + v.openness_of_asset_declarations.machine_readable + '</td>');
 });
 
 // Changin the 'yes' and 'no' to icons
