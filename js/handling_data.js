@@ -398,11 +398,11 @@ var jsonData = [{
     "code": "HU",
     "scope_asset_disclosure": {
       "ministers_members_parliament": "yes",
-      "state_municipal_higher_menagement": "Only city mayors and municipal council members",
-      "public_service_employees": "no",
+      "state_municipal_higher_menagement": "yes",
+      "public_service_employees": "yes",
       "judges_prosecutors_court_directors": "Only judges and prosecutors",
       "managers_of_state_owned_enterprises": "no",
-      "grant_receivers": "no",
+      "grant_receivers": "yes, head of a NGO receiving more than 50 million HUF (160,000 EUR) state subsidies in a year",
       "relatives_of_public_officials": "yes",
       "other": "Head of State Audit Office, National Bank, National Media Council, Economic Competition Office"
     },
@@ -437,12 +437,12 @@ var jsonData = [{
       "regular_publication_of_reports_including_verification_results": "no"
     },
     "sanctions_for_non_declaration_and_incorrect_information": {
-      "financial_fines": "yes",
+      "financial_fines": "no",
       "disciplinary_measures": "no",
       "criminal_prosecution": "no",
-      "loss_of_mandate_or_public_office": "no"
+      "loss_of_mandate_or_public_office": "yes"
     },
-    "timeline_for_storing_of_asset_declaration_information": "Not specified",
+    "timeline_for_storing_of_asset_declaration_information": "Depends on the public duty",
     "clarity_of_asset_disclosure_legislation": {
       "asset_declarations_framework_regulated_by_separate_law": "no",
       "asset_declaration_framework_split_into_multiple_laws": "yes"
