@@ -575,6 +575,70 @@ var jsonData = [{
       "html_format": "yes"
     }
   },
+    {
+        "name": "Macedonia",
+        "code": "MK",
+        "scope_asset_disclosure": {
+            "ministers_members_parliament": "yes",
+            "state_municipal_higher_menagement": "yes",
+            "public_service_employees": "no",
+            "judges_prosecutors_court_directors": "yes",
+            "managers_of_state_owned_enterprises": "yes",
+            "grant_receivers": "no",
+            "relatives_of_public_officials": "yes",
+            "other": "all elected and appointed persons"
+        },
+        "content_asset_declarations": {
+            "income_private_public_sources": "yes",
+            "real_estate": "yes",
+            "movable_property": "yes",
+            "money": "yes",
+            "beneficial_ownership": "yes",
+            "management_of_NGOs": "no",
+            "membership_in_organizations": "no",
+            "subsidies": "no",
+            "collectables": "yes",
+            "allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly": "no"
+        },
+        "public_access_to_asset_declarations": {
+            "availability_of_declarations_to_the_public": "yes",
+            "declarations_published_online": "yes"
+        },
+        "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
+            "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
+            "political_independence_of_institutions_in_charge_of_asset_declaration": "no"
+        },
+        "verification_and_control_of_asset_information": {
+            "asset_declarations_verified": "yes",
+            "random_ad_hoc_verification": "no",
+            "verification_based_on_published_risk_assessment_methodology": "no",
+            "verification_based_on_notifications_about_unjustified_wealth": "no",
+            "verification_in_case_of_prosecution_of_the_given_person": "yes",
+            "regular_publication_of_reports_including_verification_results": "no"
+        },
+        "sanctions_for_non_declaration_and_incorrect_information": {
+            "financial_fines": "yes",
+            "disciplinary_measures": "no",
+            "criminal_prosecution": "no",
+            "loss_of_mandate_or_public_office": "no"
+        },
+        "timeline_for_storing_of_asset_declaration_information": "Not specified",
+        "clarity_of_asset_disclosure_legislation": {
+            "asset_declarations_framework_regulated_by_separate_law": "no",
+            "asset_declaration_framework_split_into_multiple_laws": "yes"
+        },
+        "means_of_submission_of_asset_declarations": {
+            "filled_by_hand": "yes",
+            "via_central_online_system": "yes",
+            "forms_filled_on_computer": "no"
+        },
+        "openness_of_asset_declarations": {
+            "published": "yes",
+            "scans_of_filled_forms": "no, need to ask by FOIA",
+            "copiable_documents_word_pdf": "no",
+            "html_format": "yes"
+        }
+    },
   {
     "name": "Moldova",
     "code": "MD",
