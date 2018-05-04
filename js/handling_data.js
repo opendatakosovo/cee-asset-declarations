@@ -221,7 +221,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "yes",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+        "central_portal": "https://www.sukobinteresa.hr/hr/registar-duznosnika",
+        "unofficial_portals": "no"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
@@ -351,7 +353,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "yes",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+        "central_portal": "https://declaration.gov.ge/",
+        "unofficial_portals": ""
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
@@ -416,7 +420,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "partially",
-      "declarations_published_online": "Only some are published online"
+      "declarations_published_online": "Only some are published online",
+        "central_portal": "http://www.parlament.hu/egy-kepviselo-adatai English:http://www.parlament.hu/en/web/house-of-the-national-assembly/list-of-mps",
+        "unofficial_portals": "https://vagyonkereso.hu/"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "no",
@@ -676,7 +682,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "Declarations not available for intelligence and security officers, investigative officers in law enforcement bodies and independent public agencies",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+        "central_portal": "https://declaratii.cni.md",
+        "unofficial_portals": "http://www.avere.md/"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
@@ -741,7 +749,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "Declarations not available for President, PM, ministers and deputy ministers, heads of ministry department, central government entities, policemen.",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+        "central_portal": "no",
+        "unofficial_portals": "not available"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
@@ -871,7 +881,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "yes",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+        "central_portal": "no",
+        "unofficial_portals": "http://declarator.org"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "no",
@@ -1196,7 +1208,9 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "Declarations of secret services not available, and chiefs of some military, police and prosecution departments can be kept undisclosed.",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+      "central_portal": "https://public.nazk.gov.ua/ https://public.nazk.gov.ua/public_api",
+      "unofficial_portals": "https://declarations.com.ua/ https://declarations.com.ua/api/"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
@@ -1283,7 +1297,7 @@ function renderData(sectionJSONName) {
       finalValue = '<img class="shape" width="25px" src="assets/yes-shape.png" />';
     } else if (value == 'no') {
       finalValue = '<img class="shape" width="20px" src="assets/no-shape.png" />';
-    } else if (value == '') {
+    } else if (value == '' || value === undefined) {
       finalValue = 'Unknown';
     } else {
       finalValue = value;
@@ -1337,7 +1351,7 @@ $.each(jsonData, function (k, v) {
 
   $('.content_asset_declarations tbody').append('<tr>' + countryName + '<td id="income_private_public_sources">' + v.content_asset_declarations.income_private_public_sources + '</td><td id="real_estate">' + v.content_asset_declarations.real_estate + '</td><td id="movable_property">' + v.content_asset_declarations.movable_property + '</td><td id="money">' + v.content_asset_declarations.money + '</td><td id="beneficial_ownership">' + v.content_asset_declarations.beneficial_ownership + '</td><td id="management_of_NGOs">' + v.content_asset_declarations.management_of_NGOs + '</td><td id="membership_in_organizations">' + v.content_asset_declarations.membership_in_organizations + '</td><td id="subsidies">' + v.content_asset_declarations.subsidies + '</td><td id="collectables">' + v.content_asset_declarations.collectables + '</td><td id="allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly">' + v.content_asset_declarations.allowances_and_benefits_accruing_to_the_official_from_the_political_party_or_national_assembly + '</td></tr>')
 
-  $('.public_access_to_asset_declarations tbody').append('<tr>' + countryName + '<td id="availability_of_declarations_to_the_public">' + v.public_access_to_asset_declarations.availability_of_declarations_to_the_public + '</td><td id="declarations_published_online">' + v.public_access_to_asset_declarations.declarations_published_online + '</td></tr>');
+  $('.public_access_to_asset_declarations tbody').append('<tr>' + countryName + '<td id="availability_of_declarations_to_the_public">' + v.public_access_to_asset_declarations.availability_of_declarations_to_the_public + '</td><td id="declarations_published_online">' + v.public_access_to_asset_declarations.declarations_published_online + '</td><td id="central_portal">' + (v.public_access_to_asset_declarations.central_portal || 'Unknown') + '</td><td id="unofficial_portals">' + (v.public_access_to_asset_declarations.unofficial_portals || 'Unknown') + '</td></tr>');
 
   $('.bodies_responsible_for_storing_and_managing_asset_declaration_data tbody').append('<tr>' + countryName + '<td id="separate_agency_entrusted_with_asset_declaration_data_management">' + v.bodies_responsible_for_storing_and_managing_asset_declaration_data.separate_agency_entrusted_with_asset_declaration_data_management + '</td><td id="political_independence_of_institutions_in_charge_of_asset_declaration">' + v.bodies_responsible_for_storing_and_managing_asset_declaration_data.political_independence_of_institutions_in_charge_of_asset_declaration + '</td>');
 
