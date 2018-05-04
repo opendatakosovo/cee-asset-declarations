@@ -6,6 +6,8 @@ The goal of this project is to provide a platform that that provides a quick vis
 
 Presentation of data needs to prioritize **comparative analysis**. This means that the visualization should emphasize similarities and/or differences between the countries that data was collected from.
 
+The site is hosted at [http://assetdeclarations.transparencee.org](http://assetdeclarations.transparencee.org).
+
 ## High Level Concept
 There will be three pages:
 
