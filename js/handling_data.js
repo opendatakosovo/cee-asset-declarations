@@ -617,7 +617,9 @@ var jsonData = [{
         },
         "public_access_to_asset_declarations": {
             "availability_of_declarations_to_the_public": "yes",
-            "declarations_published_online": "yes"
+            "declarations_published_online": "yes",
+            "central_portal": "http://www.dksk.org.mk/imoti_2",
+            "unofficial_portals": "no"
         },
         "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
             "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
@@ -751,7 +753,7 @@ var jsonData = [{
       "availability_of_declarations_to_the_public": "Declarations not available for President, PM, ministers and deputy ministers, heads of ministry department, central government entities, policemen.",
       "declarations_published_online": "yes",
         "central_portal": "no",
-        "unofficial_portals": "not available"
+        "unofficial_portals": "no"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
