@@ -54,7 +54,7 @@ var jsonData = [{
   "means_of_submission_of_asset_declarations": {
     "filled_by_hand": "no",
     "via_central_online_system": "no",
-    "forms_filled_on_computer": "no"
+    "forms_filled_on_computer": "yes"
   },
   "openness_of_asset_declarations": {
     "published": "yes",
