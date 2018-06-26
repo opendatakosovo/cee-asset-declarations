@@ -818,7 +818,8 @@ var jsonData = [{
     },
     "public_access_to_asset_declarations": {
       "availability_of_declarations_to_the_public": "yes",
-      "declarations_published_online": "yes"
+      "declarations_published_online": "yes",
+      "central_portal": "http://declaratii.integritate.eu/"
     },
     "bodies_responsible_for_storing_and_managing_asset_declaration_data": {
       "separate_agency_entrusted_with_asset_declaration_data_management": "yes",
