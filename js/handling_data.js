@@ -401,7 +401,7 @@ var jsonData = [{
       "state_municipal_higher_menagement": "yes",
       "public_service_employees": "yes",
       "judges_prosecutors_court_directors": "Only judges and prosecutors",
-      "managers_of_state_owned_enterprises": "no",
+      "managers_of_state_owned_enterprises": "yes",
       "grant_receivers": "yes, head of a NGO receiving more than 50 million HUF (160,000 EUR) state subsidies in a year",
       "relatives_of_public_officials": "yes",
       "other": "Head of State Audit Office, National Bank, National Media Council, Economic Competition Office"
